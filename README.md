@@ -17,3 +17,19 @@ The project is set up to used with Qt Creator (https://www.qt.io/ide/) (see Merg
 
 # How to run it
 
+## Testing files
+
+I provide several testing files used to run POPMER and evaluate it with other planners. 
+ * [Durative domain](testing_files/durative/) includes files to evaluate POPMER and other planners on PDDL 2.1 problems (Driverlog and TMS). You can also find results for different planners and scripts used to visualise these results.
+ * [Deadlines domain](testing_files/deadlines/) includes files to evaluate POPMER and OPTIC on PDDL 3.1 problems (Driverlog only). Similarly as before, you can access results and evaluation scripts.
+
+## Running just on a single file
+
+./Merging file vhpop
+
+where file is a path to a config file with a problem, for example "durative/domains/driverlog/POPMER/config_01" and vhpop is a path to a binary of a planner you want to use. Notice, it must support format for VAL software. For example, "./Phd/temp_evaluation/vhpop-run/vhpop/vhpop". Notice the "./" at the start of the string!
+
+## Runnning on multiple files
+
+You can use also the [bash script](testing_files/general_scripts/bash/POMer.bash) in order to run on more config files. Set up FILES, DOMAIN and RESULT paths for your needs. 
+
