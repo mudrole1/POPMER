@@ -9,9 +9,9 @@ This code can be compiled and run. However, the code is a result of a developing
 
 # How to compile it
 Even though POPMER can be used with any temporal planner supporting PDDL 2.1., it requires VHPOP. This is due to historic reasons and it is going to be changed in the incoming version. Therefore, you need to get VHPOP. To set it up correctly do:
-* git clone https://github.com/mudrole1/POPMER.git
-* cd POPMER
-* git clone https://github.com/hlsyounes/vhpop.git
+* `git clone https://github.com/mudrole1/POPMER.git`
+* `cd POPMER`
+* `git clone https://github.com/hlsyounes/vhpop.git`
 
 The project is set up to used with Qt Creator (https://www.qt.io/ide/) (see Merging.pro file). I don't provide the make file yet. It uses C++11 and it compiles under Ubuntu 14.04 64b without issues. Please contact me, if you experience difficulties to compile. 
 
@@ -22,10 +22,15 @@ The project is set up to used with Qt Creator (https://www.qt.io/ide/) (see Merg
 I provide several testing files used to run POPMER and evaluate it with other planners. 
  * [Durative domain](testing_files/durative/) includes files to evaluate POPMER and other planners on PDDL 2.1 problems (Driverlog and TMS). You can also find results for different planners and scripts used to visualise these results.
  * [Deadlines domain](testing_files/deadlines/) includes files to evaluate POPMER and OPTIC on PDDL 3.1 problems (Driverlog only). Similarly as before, you can access results and evaluation scripts.
+ 
+ The config files for POPMER has following syntax:
+  * First line is reserved for any parameter which needs to be passed to the embedded planner (again, historic reasons, it is going to be changed to make configs planner independent)
+  * other lines: release_date;deadline;absolute_path_to_domain;absolute_path_to_problem;\n
+  * the last line has NO new line character in the end!
 
 ## Running just on a single file
 
-./Merging file vhpop
+`./Merging file vhpop`
 
 where file is a path to a config file with a problem, for example "durative/domains/driverlog/POPMER/config_01" and vhpop is a path to a binary of a planner you want to use. Notice, it must support format for VAL software. For example, "./Phd/temp_evaluation/vhpop-run/vhpop/vhpop". Notice the "./" at the start of the string!
 
