@@ -1,0 +1,192 @@
+Number of literals: 861
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
+Action 20 - (treat-ceramic1 p1) is uninteresting once we have fact (treated p1)
+Action 21 - (treat-ceramic1 p10) is uninteresting once we have fact (treated p10)
+Action 22 - (treat-ceramic1 p11) is uninteresting once we have fact (treated p11)
+Action 23 - (treat-ceramic1 p12) is uninteresting once we have fact (treated p12)
+Action 24 - (treat-ceramic1 p13) is uninteresting once we have fact (treated p13)
+Action 25 - (treat-ceramic1 p14) is uninteresting once we have fact (treated p14)
+Action 26 - (treat-ceramic1 p15) is uninteresting once we have fact (treated p15)
+Action 27 - (treat-ceramic1 p16) is uninteresting once we have fact (treated p16)
+Action 28 - (treat-ceramic1 p17) is uninteresting once we have fact (treated p17)
+Action 29 - (treat-ceramic1 p18) is uninteresting once we have fact (treated p18)
+Action 30 - (treat-ceramic1 p19) is uninteresting once we have fact (treated p19)
+Action 31 - (treat-ceramic1 p2) is uninteresting once we have fact (treated p2)
+Action 32 - (treat-ceramic1 p20) is uninteresting once we have fact (treated p20)
+Action 33 - (treat-ceramic1 p3) is uninteresting once we have fact (treated p3)
+Action 34 - (treat-ceramic1 p4) is uninteresting once we have fact (treated p4)
+Action 35 - (treat-ceramic1 p5) is uninteresting once we have fact (treated p5)
+Action 36 - (treat-ceramic1 p6) is uninteresting once we have fact (treated p6)
+Action 37 - (treat-ceramic1 p7) is uninteresting once we have fact (treated p7)
+Action 38 - (treat-ceramic1 p8) is uninteresting once we have fact (treated p8)
+Action 39 - (treat-ceramic1 p9) is uninteresting once we have fact (treated p9)
+Action 40 - (treat-ceramic2 p10) is uninteresting once we have fact (treated p10)
+Action 41 - (treat-ceramic2 p5) is uninteresting once we have fact (treated p5)
+Action 42 - (treat-ceramic2 p6) is uninteresting once we have fact (treated p6)
+Action 43 - (treat-ceramic2 p7) is uninteresting once we have fact (treated p7)
+Action 44 - (treat-ceramic2 p8) is uninteresting once we have fact (treated p8)
+Action 45 - (treat-ceramic2 p9) is uninteresting once we have fact (treated p9)
+Action 46 - (treat-ceramic3 p11) is uninteresting once we have fact (treated p11)
+Action 47 - (treat-ceramic3 p12) is uninteresting once we have fact (treated p12)
+Action 48 - (treat-ceramic3 p13) is uninteresting once we have fact (treated p13)
+Action 49 - (treat-ceramic3 p14) is uninteresting once we have fact (treated p14)
+Action 50 - (treat-ceramic3 p15) is uninteresting once we have fact (treated p15)
+Action 51 - (treat-ceramic3 p16) is uninteresting once we have fact (treated p16)
+Action 52 - (treat-ceramic3 p17) is uninteresting once we have fact (treated p17)
+Action 53 - (treat-ceramic3 p18) is uninteresting once we have fact (treated p18)
+Action 54 - (treat-ceramic3 p19) is uninteresting once we have fact (treated p19)
+Action 55 - (treat-ceramic3 p20) is uninteresting once we have fact (treated p20)
+Action 95 - (make-structure p9 p10) is uninteresting once we have fact (structured p9 p10)
+Action 118 - (make-structure p11 p12) is uninteresting once we have fact (structured p11 p12)
+Action 160 - (make-structure p13 p14) is uninteresting once we have fact (structured p13 p14)
+Action 202 - (make-structure p15 p16) is uninteresting once we have fact (structured p15 p16)
+Action 244 - (make-structure p17 p18) is uninteresting once we have fact (structured p17 p18)
+Action 276 - (make-structure p1 p2) is uninteresting once we have fact (structured p1 p2)
+Action 306 - (make-structure p19 p20) is uninteresting once we have fact (structured p19 p20)
+Action 349 - (make-structure p3 p4) is uninteresting once we have fact (structured p3 p4)
+Action 391 - (make-structure p5 p6) is uninteresting once we have fact (structured p5 p6)
+Action 433 - (make-structure p7 p8) is uninteresting once we have fact (structured p7 p8)
+73% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 80.000, admissible cost estimate 0.000
+b (79.000 | 5.000)b (78.000 | 5.000)b (77.000 | 5.000)b (76.000 | 5.000)b (75.000 | 5.000)b (74.000 | 5.000)b (73.000 | 5.000)b (72.000 | 5.000)b (71.000 | 5.000)b (70.000 | 5.000)b (69.000 | 10.000)b (68.000 | 10.000)b (67.000 | 10.000)b (66.000 | 10.000)b (65.000 | 10.000)b (64.000 | 10.000)b (63.000 | 15.000)b (62.000 | 15.000)b (61.000 | 15.000)b (60.000 | 15.000)b (59.000 | 15.000)b (58.000 | 15.000)b (57.000 | 15.000)b (56.000 | 15.000)b (55.000 | 15.000)b (54.000 | 15.000)b (53.000 | 15.000)b (52.000 | 15.000)b (51.000 | 15.000)b (50.000 | 15.000)b (49.000 | 15.000)b (48.000 | 15.000)b (47.000 | 15.000)b (46.000 | 15.000)b (45.000 | 15.000)b (44.000 | 15.000)b (43.000 | 15.000)b (42.000 | 15.000)b (41.000 | 15.000)b (40.000 | 15.000)b (39.000 | 15.000)b (38.000 | 15.000)b (37.000 | 15.000)b (36.000 | 15.000)b (35.000 | 15.000)b (34.000 | 15.000)b (33.000 | 15.000)b (32.000 | 15.000)b (31.000 | 15.000)b (30.000 | 15.000)b (29.000 | 15.000)b (28.000 | 15.000)b (27.000 | 15.000)b (26.000 | 15.000)b (25.000 | 15.000)b (24.000 | 15.000)b (23.000 | 15.000)b (22.000 | 15.000)b (21.000 | 15.000)b (20.000 | 15.000)b (19.000 | 15.000)b (18.000 | 15.000)b (17.000 | 15.000)b (16.000 | 15.000)b (15.000 | 15.000)b (14.000 | 15.000)b (13.000 | 15.000)b (12.000 | 15.000)b (11.000 | 15.000)b (10.000 | 15.000)b (9.000 | 15.000)b (8.000 | 15.000)b (7.000 | 15.000)b (6.000 | 15.000)b (5.000 | 16.001)b (4.000 | 19.000)b (3.000 | 19.000)b (2.000 | 19.000)b (1.000 | 19.000)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 19.001
+; States evaluated so far: 81
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.88
+0.000: (bake-ceramic1 p2 k2)  [15.000]
+0.000: (bake-ceramic1 p1 k2)  [15.000]
+0.001: (bake-ceramic3 p20 k2)  [5.000]
+0.001: (bake-ceramic3 p19 k2)  [5.000]
+0.001: (bake-ceramic3 p18 k2)  [5.000]
+0.001: (bake-ceramic3 p17 k2)  [5.000]
+0.001: (bake-ceramic3 p16 k2)  [5.000]
+0.001: (bake-ceramic3 p15 k2)  [5.000]
+0.001: (bake-ceramic3 p14 k2)  [5.000]
+0.001: (bake-ceramic3 p13 k2)  [5.000]
+0.001: (bake-ceramic3 p12 k2)  [5.000]
+0.001: (bake-ceramic3 p11 k2)  [5.000]
+0.001: (bake-ceramic2 p9 k2)  [10.000]
+0.001: (bake-ceramic2 p8 k2)  [10.000]
+0.001: (bake-ceramic2 p7 k2)  [10.000]
+0.001: (bake-ceramic2 p6 k2)  [10.000]
+0.001: (bake-ceramic2 p5 k2)  [10.000]
+0.001: (bake-ceramic2 p10 k2)  [10.000]
+0.001: (bake-ceramic1 p4 k2)  [15.000]
+0.001: (bake-ceramic1 p3 k2)  [15.000]
+0.001: (treat-ceramic3 p20)  [1.000]
+0.001: (treat-ceramic3 p19)  [1.000]
+0.001: (treat-ceramic3 p18)  [1.000]
+0.001: (treat-ceramic3 p17)  [1.000]
+0.001: (treat-ceramic3 p16)  [1.000]
+0.001: (treat-ceramic3 p15)  [1.000]
+0.001: (treat-ceramic3 p14)  [1.000]
+0.001: (treat-ceramic3 p13)  [1.000]
+0.001: (treat-ceramic3 p12)  [1.000]
+0.001: (treat-ceramic3 p11)  [1.000]
+0.001: (treat-ceramic2 p9)  [2.000]
+0.001: (treat-ceramic2 p8)  [2.000]
+0.001: (treat-ceramic2 p7)  [2.000]
+0.001: (treat-ceramic2 p6)  [2.000]
+0.001: (treat-ceramic2 p5)  [2.000]
+0.001: (treat-ceramic2 p10)  [2.000]
+0.001: (treat-ceramic1 p4)  [3.000]
+0.001: (treat-ceramic1 p3)  [3.000]
+0.001: (treat-ceramic1 p2)  [3.000]
+0.001: (treat-ceramic1 p1)  [3.000]
+5.001: (make-structure p19 p20)  [1.000]
+5.001: (make-structure p17 p18)  [1.000]
+5.001: (make-structure p15 p16)  [1.000]
+5.001: (make-structure p13 p14)  [1.000]
+5.001: (make-structure p11 p12)  [1.000]
+6.002: (bake-structure p19 p20 k2)  [3.000]
+6.002: (bake-structure p17 p18 k2)  [3.000]
+6.002: (bake-structure p15 p16 k2)  [3.000]
+6.002: (bake-structure p13 p14 k2)  [3.000]
+6.002: (bake-structure p11 p12 k2)  [3.000]
+10.001: (make-structure p7 p8)  [1.000]
+10.001: (make-structure p5 p6)  [1.000]
+10.001: (make-structure p9 p10)  [1.000]
+11.002: (bake-structure p7 p8 k2)  [3.000]
+11.002: (bake-structure p5 p6 k2)  [3.000]
+11.002: (bake-structure p9 p10 k2)  [3.000]
+15.001: (make-structure p3 p4)  [1.000]
+15.001: (make-structure p1 p2)  [1.000]
+16.001: (bake-structure p1 p2 k2)  [3.000]
+16.001: (bake-structure p3 p4 k2)  [3.000]
+
+ * All goal deadlines now no later than 19.001
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+
+Problem Unsolvable
+;;;; Solution Found
+; States evaluated: 101
+; Cost: 19.001
+; Time 0.93
+0.000: (bake-ceramic1 p2 k2)  [15.000]
+0.000: (bake-ceramic1 p1 k2)  [15.000]
+0.001: (bake-ceramic3 p20 k2)  [5.000]
+0.001: (bake-ceramic3 p19 k2)  [5.000]
+0.001: (bake-ceramic3 p18 k2)  [5.000]
+0.001: (bake-ceramic3 p17 k2)  [5.000]
+0.001: (bake-ceramic3 p16 k2)  [5.000]
+0.001: (bake-ceramic3 p15 k2)  [5.000]
+0.001: (bake-ceramic3 p14 k2)  [5.000]
+0.001: (bake-ceramic3 p13 k2)  [5.000]
+0.001: (bake-ceramic3 p12 k2)  [5.000]
+0.001: (bake-ceramic3 p11 k2)  [5.000]
+0.001: (bake-ceramic2 p9 k2)  [10.000]
+0.001: (bake-ceramic2 p8 k2)  [10.000]
+0.001: (bake-ceramic2 p7 k2)  [10.000]
+0.001: (bake-ceramic2 p6 k2)  [10.000]
+0.001: (bake-ceramic2 p5 k2)  [10.000]
+0.001: (bake-ceramic2 p10 k2)  [10.000]
+0.001: (bake-ceramic1 p4 k2)  [15.000]
+0.001: (bake-ceramic1 p3 k2)  [15.000]
+0.001: (treat-ceramic3 p20)  [1.000]
+0.001: (treat-ceramic3 p19)  [1.000]
+0.001: (treat-ceramic3 p18)  [1.000]
+0.001: (treat-ceramic3 p17)  [1.000]
+0.001: (treat-ceramic3 p16)  [1.000]
+0.001: (treat-ceramic3 p15)  [1.000]
+0.001: (treat-ceramic3 p14)  [1.000]
+0.001: (treat-ceramic3 p13)  [1.000]
+0.001: (treat-ceramic3 p12)  [1.000]
+0.001: (treat-ceramic3 p11)  [1.000]
+0.001: (treat-ceramic2 p9)  [2.000]
+0.001: (treat-ceramic2 p8)  [2.000]
+0.001: (treat-ceramic2 p7)  [2.000]
+0.001: (treat-ceramic2 p6)  [2.000]
+0.001: (treat-ceramic2 p5)  [2.000]
+0.001: (treat-ceramic2 p10)  [2.000]
+0.001: (treat-ceramic1 p4)  [3.000]
+0.001: (treat-ceramic1 p3)  [3.000]
+0.001: (treat-ceramic1 p2)  [3.000]
+0.001: (treat-ceramic1 p1)  [3.000]
+5.001: (make-structure p19 p20)  [1.000]
+5.001: (make-structure p17 p18)  [1.000]
+5.001: (make-structure p15 p16)  [1.000]
+5.001: (make-structure p13 p14)  [1.000]
+5.001: (make-structure p11 p12)  [1.000]
+6.002: (bake-structure p19 p20 k2)  [3.000]
+6.002: (bake-structure p17 p18 k2)  [3.000]
+6.002: (bake-structure p15 p16 k2)  [3.000]
+6.002: (bake-structure p13 p14 k2)  [3.000]
+6.002: (bake-structure p11 p12 k2)  [3.000]
+10.001: (make-structure p7 p8)  [1.000]
+10.001: (make-structure p5 p6)  [1.000]
+10.001: (make-structure p9 p10)  [1.000]
+11.002: (bake-structure p7 p8 k2)  [3.000]
+11.002: (bake-structure p5 p6 k2)  [3.000]
+11.002: (bake-structure p9 p10 k2)  [3.000]
+15.001: (make-structure p3 p4)  [1.000]
+15.001: (make-structure p1 p2)  [1.000]
+16.001: (bake-structure p1 p2 k2)  [3.000]
+16.001: (bake-structure p3 p4 k2)  [3.000]
+;Could not send SIGTERM to process 18803
+;waited

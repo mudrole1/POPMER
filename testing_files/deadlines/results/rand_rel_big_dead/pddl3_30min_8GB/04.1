@@ -1,0 +1,37 @@
+; Plan found with metric 1029.003
+; Theoretical reachable cost 1029.004
+; States evaluated so far: 154
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 2.93
+394.000: (drive-truck truck1 s3 s7 driver1 task3)  [10.000]
+404.002: (drive-truck truck1 s7 s19 driver1 task3)  [10.000]
+414.003: (drive-truck truck1 s19 s11 driver1 task3)  [10.000]
+424.003: (load-truck package3 truck1 s11 task3)  [2.000]
+426.003: (drive-truck truck1 s11 s22 driver1 task3)  [10.000]
+436.004: (drive-truck truck1 s22 s23 driver1 task3)  [10.000]
+446.005: (drive-truck truck1 s23 s9 driver1 task3)  [10.000]
+456.006: (drive-truck truck1 s9 s5 driver1 task3)  [10.000]
+466.007: (drive-truck truck1 s5 s15 driver1 task3)  [10.000]
+476.007: (unload-truck package3 truck1 s15 task3)  [2.000]
+478.007: (drive-truck truck1 s15 s6 driver1 task3)  [10.000]
+564.004: (drive-truck truck1 s6 s4 driver1 task3)  [10.000]
+574.005: (drive-truck truck1 s4 s23 driver1 task3)  [10.000]
+583.005: (task-finish-ontime package3 s15 task3)  [1.000]
+717.000: (load-truck package1 truck1 s23 task1)  [2.000]
+719.000: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+729.000: (unload-truck package1 truck1 s9 task1)  [2.000]
+877.000: (drive-truck truck1 s9 s20 driver1 task4)  [10.000]
+897.005: (task-finish-ontime package1 s9 task1)  [1.000]
+960.000: (load-truck package2 truck1 s20 task2)  [2.000]
+962.000: (drive-truck truck1 s20 s9 driver1 task4)  [10.000]
+972.000: (unload-truck package2 truck1 s9 task2)  [2.000]
+974.000: (drive-truck truck1 s9 s16 driver1 task2)  [10.000]
+984.001: (drive-truck truck1 s16 s19 driver1 task2)  [10.000]
+994.002: (drive-truck truck1 s19 s7 driver1 task2)  [10.000]
+1004.002: (load-truck package5 truck1 s7 task4)  [2.000]
+1006.002: (drive-truck truck1 s7 s19 driver1 task2)  [10.000]
+1016.003: (drive-truck truck1 s19 s16 driver1 task2)  [10.000]
+1026.003: (unload-truck package5 truck1 s16 task4)  [2.000]
+1028.003: (task-finish-ontime package2 s9 task2)  [1.000]
+1028.003: (task-finish-ontime package5 s16 task4)  [1.000]
+

@@ -1,0 +1,282 @@
+pid
+7837
+TOPSAT: Temporal Optimal Planner using SATisfiability
+        for PDDL 2.1 level 3 durative actions
+Copyright 2011-2012, Sharif University of Technology.
+Part of this work is based on VAL: PDDL Plan Validator.
+
+Using SAT Solver : precosat
+Parsing input file: /data/Phd_final/Phd_evaluation/durative/domains/tms/domain-itsat.pddl
+Parsing input file: /data/Phd_final/Phd_evaluation/durative/domains/tms/orig_problems/tms-2-3-light-40
+Input files parsed successfully.
+Grounding operator: bake-ceramic1  15  2
+Grounding operator: bake-ceramic2  10  2
+Grounding operator: bake-ceramic3  5  2
+Grounding operator: treat-ceramic1  3  1
+Grounding operator: treat-ceramic2  2  1
+Grounding operator: treat-ceramic3  1  1
+Grounding operator: make-structure  1  2
+Grounding operator: bake-structure  3  3
+Domain: domain-tms-2-3-light Objects: 41
+Predicates: 7 Operators: 8
+Propositions: 3321 Actions: 3312
+Time taken : 0.029324 secs
+
+Process started:
+
+
+Ration of Relevant Actions: 0.0458937
+
+Number of Actons: 3312    Number of Propositions: 3321
+
+Number of Relevant Actons: 152    Number of Relevant Propositions: 160
+
+COMPRESSION STARTED
+Ratio of Compressed Actions:  0.736842Trying with T=1... 
+Variables: total=776	prop=320	action= 456
+Total Mutex Clauses=1588	ratio=0.698944
+Total Event Clauses=424	Total Clauses=2272
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0     636    1292    440      0      0       0      0    0.0  0    0
+c   0    0.0     323    1292    753      0      0       1      0    0.0  0    0
+Instance Unsatisfiable
+Time: 0.470528 secs
+
+
+Trying with T=4... 
+Variables: total=2624	prop=800	action= 1824
+Total Mutex Clauses=6352	ratio=0.743098
+Total Event Clauses=1816	Total Clauses=8548
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    3404    7568    420      0      0       0      0    0.0  0    1
+c   s    0.0       0       0   1176   1318   1006       0      0    0.0  0    1
+c   l    0.0       0       0   1176   1318   1006       0   5000    0.0  0    1
+c   1    0.0       0       0   1176   1318   1006       0      0    0.0  0    1
+Satisfied!
+A plan found with layers = 4
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+41 redundant actions have been removed from the plan.
+Writing final plan to file: /data/Phd_final/Phd_evaluation/durative/results/tms/itsat_30min_6GB/40.1 , makespan = 19.02 , elapsed time = 0.531048
+Time: 0.031654 secs
+
+
+Trying with T=5... 
+Variables: total=3240	prop=960	action= 2280
+Total Mutex Clauses=7940	ratio=0.746241
+Total Event Clauses=2280	Total Clauses=10640
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    4320    9660    420      0      0       0      0    0.0  0    2
+c   s    0.0       0       0   1176   1703   1477       0      0    0.0  0    2
+c   l    0.0       0       0   1176   1703   1477       0   5000    0.0  0    2
+c   1    0.0       0       0   1176   1703   1477       0      0    0.0  0    2
+Satisfied!
+A plan found with layers = 5
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+85 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.039791 secs
+
+
+Trying with T=3... 
+Variables: total=2008	prop=640	action= 1368
+Total Mutex Clauses=4764	ratio=0.737918
+Total Event Clauses=1352	Total Clauses=6456
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    2488    5476    420      0      0       0      0    0.0  0    1
+c   s    0.0       0       0   1256   1090    260       0      0    0.0  0    1
+c   l    0.0       0       0   1256   1090    260       0   5000    0.0  0    1
+c   1    0.0       0       0   1256   1090    260       0      0    0.0  0    1
+Satisfied!
+A plan found with layers = 3
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+35 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.022196 secs
+
+
+Trying with T=6... 
+Variables: total=3856	prop=1120	action= 2736
+Total Mutex Clauses=9528	ratio=0.748351
+Total Event Clauses=2744	Total Clauses=12732
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    5236   11752    420      0      0       0      0    0.0  0    2
+c   s    0.0       0       0   1176   2117   1922       0      0    0.0  0    2
+c   l    0.0       0       0   1176   2117   1922       0   5000    0.0  0    2
+c   1    0.0       0       0   1176   2117   1922       0      0    0.0  0    2
+Satisfied!
+A plan found with layers = 6
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+120 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.051014 secs
+
+
+Trying with T=2... 
+Variables: total=1392	prop=480	action= 912
+Total Mutex Clauses=3176	ratio=0.727773
+Total Event Clauses=888	Total Clauses=4364
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    1572    3384    420      0      0       0      0    0.0  0    1
+c   s    0.0       0       0   1832     96      0       0      0    0.0  0    0
+c   l    0.0       0       0   1832     96      0       0   5000    0.0  0    0
+c   1    0.0       0       0   1832     96      0       0      0    0.0  0    0
+Satisfied!
+A plan found with layers = 2
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+32 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.016146 secs
+
+
+Trying with T=7... 
+Variables: total=4472	prop=1280	action= 3192
+Total Mutex Clauses=11116	ratio=0.749865
+Total Event Clauses=3208	Total Clauses=14824
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    6152   13844    420      0      0       0      0    0.0  0    2
+c   s    0.0       0       0   1176   2531   2362       0      0    0.0  0    2
+c   l    0.0       0       0   1176   2531   2362       0   5000    0.0  0    2
+c   1    0.0       0       0   1176   2531   2362       0      0    0.0  0    2
+Satisfied!
+A plan found with layers = 7
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+160 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.060202 secs
+
+
+Trying with T=8... 
+Variables: total=5088	prop=1440	action= 3648
+Total Mutex Clauses=12704	ratio=0.751005
+Total Event Clauses=3672	Total Clauses=16916
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    7068   15936    420      0      0       0      0    0.0  0    2
+c   s    0.0       0       0   1176   2941   2810       0      0    0.0  0    2
+c   l    0.0       0       0   1176   2941   2810       0   5000    0.0  0    2
+c   1    0.0       0       0   1176   2941   2810       0      0    0.0  0    2
+Satisfied!
+A plan found with layers = 8
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+200 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.071762 secs
+
+
+Trying with T=9... 
+Variables: total=5704	prop=1600	action= 4104
+Total Mutex Clauses=14292	ratio=0.751894
+Total Event Clauses=4136	Total Clauses=19008
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    7984   18028    420      0      0       0      0    0.0  0    4
+c   s    0.0       0       0   1176   3355   3250       0      0    0.0  0    3
+c   l    0.0       0       0   1176   3355   3250       0   5000    0.0  0    3
+c   1    0.1       0       0   1176   3355   3250       0      0    0.0  0    3
+Satisfied!
+A plan found with layers = 9
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+240 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.088085 secs
+
+
+Trying with T=10... 
+Variables: total=6320	prop=1760	action= 4560
+Total Mutex Clauses=15880	ratio=0.752607
+Total Event Clauses=4600	Total Clauses=21100
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    8900   20120    420      0      0       0      0    0.0  0    4
+c   s    0.1       0       0   1176   3768   3692       0      0    0.0  0    3
+c   l    0.1       0       0   1176   3768   3692       0   5000    0.0  0    3
+c   1    0.1       0       0   1176   3768   3692       0      0    0.0  0    3
+Satisfied!
+A plan found with layers = 10
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+280 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.12038 secs
+
+
+Trying with T=11... 
+Variables: total=6936	prop=1920	action= 5016
+Total Mutex Clauses=17468	ratio=0.753191
+Total Event Clauses=5064	Total Clauses=23192
+Now trying to solve...
+c   .
+c   .       variables          fixed    eliminated       learned     agility
+c   . seconds         clauses      equivalent     conflicts      height      MB
+c   .
+c   *    0.0    9816   22212    420      0      0       0      0    0.0  0    4
+c   s    0.1       0       0   1176   4177   4141       0      0    0.0  0    3
+c   l    0.1       0       0   1176   4177   4141       0   5000    0.0  0    3
+c   1    0.1       0       0   1176   4177   4141       0      0    0.0  0    3
+Satisfied!
+A plan found with layers = 11
+Trying to find a satisfying timed plan:
+Valid Timed Plan found!
+======================
+320 redundant actions have been removed from the plan.
+Omitting the plan with makespan 19.02. Best makespan found so far is 19.02
+Time: 0.131116 secs
+
+
+Operation Total Time: 1.13221 secs
+;Could not send SIGTERM to process 7837
+;waited

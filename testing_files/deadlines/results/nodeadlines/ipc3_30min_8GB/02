@@ -1,0 +1,16 @@
+;dlog-1-1-25-2
+Makespan: 59.03
+0.01:(drive-truck truck1 s3 s7 driver1 task2)[10]
+10.02:(drive-truck truck1 s7 s23 driver1 task2)[10]
+20.03:(load-truck package1 truck1 s23 task2)[2]
+22.03:(drive-truck truck1 s23 s9 driver1 task2)[10]
+32.03:(unload-truck package1 truck1 s9 task2)[2]
+34.03:(drive-truck truck1 s9 s20 driver1 task1)[10]
+34.03:(task-finish-ontime package1 s9 task1)[1]
+44.03:(load-truck package2 truck1 s20 task2)[2]
+46.03:(drive-truck truck1 s20 s9 driver1 task2)[10]
+56.03:(unload-truck package2 truck1 s9 task2)[2]
+58.03:(task-finish-ontime package2 s9 task2)[1]
+Time: 80
+;Could not send SIGTERM to process 9606
+;waited

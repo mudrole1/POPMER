@@ -1,0 +1,3 @@
+20;-g;-h;ADDR/ADDR_WORK/BUC/LIFO;-f;{n,s}LR/{l}MW_add;-l;10000;-f;{n,s}LR/{u}MW_add/{l}MW_add;-l;100000;-f;{n,s,l}LR;-l;200000;-f;{n,s,u}LR/{l}LR;-l;unlimited;-v0;
+20.00;123.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_1.pddl;
+163.00;264.01;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_2.pddl;

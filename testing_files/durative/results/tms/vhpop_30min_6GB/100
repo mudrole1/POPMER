@@ -1,0 +1,6 @@
+;tms-2-3-light-100
+./vhpop_naive.bash: line 79:  1786 Killed                  ./../../../../phd/Phd/temp_evaluation/vhpop-pure/vhpop/vhpop $domain $p
+;Could not send SIGTERM to process 1786
+;waited
+
+Whole time of vhpop running:

@@ -1,0 +1,123 @@
+Number of literals: 675
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Only one action adds (at package1 s9) so its precondition (in package1 truck1) is relevant to within preferences
+Only one action adds (at package1 s9) so its precondition (at truck1 s9) is relevant to within preferences
+Only one action adds (at package2 s9) so its precondition (in package2 truck1) is relevant to within preferences
+Only one action adds (at package2 s9) so its precondition (at truck1 s9) is relevant to within preferences
+Only one action adds (at package3 s15) so its precondition (in package3 truck1) is relevant to within preferences
+Only one action adds (at package3 s15) so its precondition (at truck1 s15) is relevant to within preferences
+Only one action adds (at package5 s16) so its precondition (in package5 truck1) is relevant to within preferences
+Only one action adds (at package5 s16) so its precondition (at truck1 s16) is relevant to within preferences
+Only one action adds (at package6 s23) so its precondition (in package6 truck1) is relevant to within preferences
+Only one action adds (at package6 s23) so its precondition (at truck1 s23) is relevant to within preferences
+Only one action adds (at package7 s18) so its precondition (in package7 truck1) is relevant to within preferences
+Only one action adds (at package7 s18) so its precondition (at truck1 s18) is relevant to within preferences
+Only one action adds (at package8 s12) so its precondition (in package8 truck1) is relevant to within preferences
+Only one action adds (at package8 s12) so its precondition (at truck1 s12) is relevant to within preferences
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+(G)All the ground actions in this problem are compression-safe
+(G)Initial heuristic = 29.000, admissible cost estimate inf
+(G)b (27.000 | 10.000)(G)(G)b (26.000 | 20.001)(G)(G)(G)(G)(G)b (25.000 | 22.000)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (23.000 | 44.000)(G)(G)b (22.000 | 54.001)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (21.000 | 86.003)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (20.000 | 98.004)(G)(G)b (19.000 | 108.004)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (17.000 | 130.005)(G)(G)(G)b (16.000 | 132.005)(G)(G)(G)b (15.000 | 132.005)(G)b (14.000 | 142.005)(G)(G)(G)(G)(G)b (13.000 | 144.005)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (12.000 | 156.005)(G)b (11.000 | 166.005)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (10.000 | 188.006)(G)(G)(G)b (9.000 | 190.006)(G)(G)(G)(G)(G)(G)(G)b (8.000 | 202.006)(G)b (7.000 | 212.006)(G)b (6.000 | 222.007)(G)(G)(G)b (5.000 | 234.008)(G)b (4.000 | 244.008)(G)b (3.000 | 254.009)(G)b (2.000 | 264.010)(G)
+; LP calculated the cost
+
+; Plan found with metric 266.011
+; Theoretical reachable cost inf
+; States evaluated so far: 128
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 2.35
+; Dummy steps: 7
+0.000: (drive-truck truck1 s3 s7 driver1)  [10.000]
+10.001: (drive-truck truck1 s7 s19 driver1)  [10.000]
+20.001: (load-truck package8 truck1 s19)  [2.000]
+22.001: (drive-truck truck1 s19 s7 driver1)  [10.000]
+32.001: (load-truck package5 truck1 s7)  [2.000]
+34.001: (drive-truck truck1 s7 s19 driver1)  [10.000]
+44.002: (drive-truck truck1 s19 s18 driver1)  [10.000]
+54.003: (drive-truck truck1 s18 s0 driver1)  [10.000]
+64.004: (drive-truck truck1 s0 s12 driver1)  [10.000]
+74.004: (load-truck package7 truck1 s12)  [2.000]
+76.004: (drive-truck truck1 s12 s0 driver1)  [10.000]
+86.005: (drive-truck truck1 s0 s18 driver1)  [10.000]
+96.005: (unload-truck package7 truck1 s18)  [2.000]
+98.005: (drive-truck truck1 s18 s0 driver1)  [10.000]
+108.006: (drive-truck truck1 s0 s11 driver1)  [10.000]
+118.006: (load-truck package3 truck1 s11)  [2.000]
+120.006: (drive-truck truck1 s11 s20 driver1)  [10.000]
+130.006: (load-truck package6 truck1 s20)  [2.000]
+130.006: (load-truck package2 truck1 s20)  [2.000]
+132.006: (drive-truck truck1 s20 s9 driver1)  [10.000]
+142.006: (unload-truck package2 truck1 s9)  [2.000]
+144.006: (drive-truck truck1 s9 s16 driver1)  [10.000]
+154.006: (unload-truck package5 truck1 s16)  [2.000]
+156.006: (drive-truck truck1 s16 s9 driver1)  [10.000]
+166.007: (drive-truck truck1 s9 s23 driver1)  [10.000]
+176.007: (load-truck package1 truck1 s23)  [2.000]
+178.007: (drive-truck truck1 s23 s9 driver1)  [10.000]
+188.007: (unload-truck package1 truck1 s9)  [2.000]
+190.007: (drive-truck truck1 s9 s23 driver1)  [10.000]
+200.007: (unload-truck package6 truck1 s23)  [2.000]
+202.007: (drive-truck truck1 s23 s4 driver1)  [10.000]
+212.008: (drive-truck truck1 s4 s5 driver1)  [10.000]
+222.009: (drive-truck truck1 s5 s15 driver1)  [10.000]
+232.009: (unload-truck package3 truck1 s15)  [2.000]
+234.009: (drive-truck truck1 s15 s5 driver1)  [10.000]
+244.010: (drive-truck truck1 s5 s0 driver1)  [10.000]
+254.011: (drive-truck truck1 s0 s12 driver1)  [10.000]
+264.011: (unload-truck package8 truck1 s12)  [2.000]
+
+ * All goal deadlines now no later than 266.011
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+
+Problem Unsolvable
+;;;; Solution Found
+; States evaluated: 128
+; Cost: 266.011
+; Time 2.37
+; Dummy steps: 7
+0.000: (drive-truck truck1 s3 s7 driver1)  [10.000]
+10.001: (drive-truck truck1 s7 s19 driver1)  [10.000]
+20.001: (load-truck package8 truck1 s19)  [2.000]
+22.001: (drive-truck truck1 s19 s7 driver1)  [10.000]
+32.001: (load-truck package5 truck1 s7)  [2.000]
+34.001: (drive-truck truck1 s7 s19 driver1)  [10.000]
+44.002: (drive-truck truck1 s19 s18 driver1)  [10.000]
+54.003: (drive-truck truck1 s18 s0 driver1)  [10.000]
+64.004: (drive-truck truck1 s0 s12 driver1)  [10.000]
+74.004: (load-truck package7 truck1 s12)  [2.000]
+76.004: (drive-truck truck1 s12 s0 driver1)  [10.000]
+86.005: (drive-truck truck1 s0 s18 driver1)  [10.000]
+96.005: (unload-truck package7 truck1 s18)  [2.000]
+98.005: (drive-truck truck1 s18 s0 driver1)  [10.000]
+108.006: (drive-truck truck1 s0 s11 driver1)  [10.000]
+118.006: (load-truck package3 truck1 s11)  [2.000]
+120.006: (drive-truck truck1 s11 s20 driver1)  [10.000]
+130.006: (load-truck package6 truck1 s20)  [2.000]
+130.006: (load-truck package2 truck1 s20)  [2.000]
+132.006: (drive-truck truck1 s20 s9 driver1)  [10.000]
+142.006: (unload-truck package2 truck1 s9)  [2.000]
+144.006: (drive-truck truck1 s9 s16 driver1)  [10.000]
+154.006: (unload-truck package5 truck1 s16)  [2.000]
+156.006: (drive-truck truck1 s16 s9 driver1)  [10.000]
+166.007: (drive-truck truck1 s9 s23 driver1)  [10.000]
+176.007: (load-truck package1 truck1 s23)  [2.000]
+178.007: (drive-truck truck1 s23 s9 driver1)  [10.000]
+188.007: (unload-truck package1 truck1 s9)  [2.000]
+190.007: (drive-truck truck1 s9 s23 driver1)  [10.000]
+200.007: (unload-truck package6 truck1 s23)  [2.000]
+202.007: (drive-truck truck1 s23 s4 driver1)  [10.000]
+212.008: (drive-truck truck1 s4 s5 driver1)  [10.000]
+222.009: (drive-truck truck1 s5 s15 driver1)  [10.000]
+232.009: (unload-truck package3 truck1 s15)  [2.000]
+234.009: (drive-truck truck1 s15 s5 driver1)  [10.000]
+244.010: (drive-truck truck1 s5 s0 driver1)  [10.000]
+254.011: (drive-truck truck1 s0 s12 driver1)  [10.000]
+264.011: (unload-truck package8 truck1 s12)  [2.000]
+;Could not send SIGTERM to process 22600
+;waited

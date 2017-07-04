@@ -1,0 +1,129 @@
+(define (problem tms-2-3-light-80)
+  (:domain domain-tms-2-3-light)
+  (:objects 
+            k2 - kiln20
+            p1 - piecetype1
+            p2 - piecetype1
+            p3 - piecetype1
+            p4 - piecetype1
+            p5 - piecetype2
+            p6 - piecetype2
+            p7 - piecetype2
+            p8 - piecetype2
+            p9 - piecetype2
+            p10 - piecetype2
+            p11 - piecetype3
+            p12 - piecetype3
+            p13 - piecetype3
+            p14 - piecetype3
+            p15 - piecetype3
+            p16 - piecetype3
+            p17 - piecetype3
+            p18 - piecetype3
+            p19 - piecetype3
+            p20 - piecetype3
+            p21 - piecetype1
+            p22 - piecetype1
+            p23 - piecetype1
+            p24 - piecetype1
+            p25 - piecetype2
+            p26 - piecetype2
+            p27 - piecetype2
+            p28 - piecetype2
+            p29 - piecetype2
+            p30 - piecetype2
+            p31 - piecetype3
+            p32 - piecetype3
+            p33 - piecetype3
+            p34 - piecetype3
+            p35 - piecetype3
+            p36 - piecetype3
+            p37 - piecetype3
+            p38 - piecetype3
+            p39 - piecetype3
+            p40 - piecetype3
+            p41 - piecetype1
+            p42 - piecetype1
+            p43 - piecetype1
+            p44 - piecetype1
+            p45 - piecetype2
+            p46 - piecetype2
+            p47 - piecetype2
+            p48 - piecetype2
+            p49 - piecetype3
+            p50 - piecetype3
+            p51 - piecetype3
+            p52 - piecetype3
+            p53 - piecetype3
+            p54 - piecetype3
+            p55 - piecetype3
+            p56 - piecetype3
+            p57 - piecetype3
+            p58 - piecetype3
+            p59 - piecetype3
+            p60 - piecetype3
+            p61 - piecetype1
+            p62 - piecetype1
+            p63 - piecetype1
+            p64 - piecetype1
+            p65 - piecetype2
+            p66 - piecetype2
+            p67 - piecetype2
+            p68 - piecetype2
+            p69 - piecetype2
+            p70 - piecetype2
+            p71 - piecetype1
+            p72 - piecetype1
+            p73 - piecetype1
+            p74 - piecetype1
+            p75 - piecetype2
+            p76 - piecetype2
+            p77 - piecetype2
+            p78 - piecetype2
+            p79 - piecetype3
+            p80 - piecetype3)
+  (:init (ready k2))
+  (:goal (and 
+(baked-structure p1 p2)
+(baked-structure p3 p4)
+(baked-structure p5 p6)
+(baked-structure p7 p8)
+(baked-structure p9 p10)
+(baked-structure p11 p12)
+(baked-structure p13 p14)
+(baked-structure p15 p16)
+(baked-structure p17 p18)
+(baked-structure p19 p20)
+(baked-structure p21 p22)
+(baked-structure p23 p24)
+(baked-structure p25 p26)
+(baked-structure p27 p28)
+(baked-structure p29 p30)
+(baked-structure p31 p32)
+(baked-structure p33 p34)
+(baked-structure p35 p36)
+(baked-structure p37 p38)
+(baked-structure p39 p40)
+(baked-structure p41 p42)
+(baked-structure p43 p44)
+(baked-structure p45 p46)
+(baked-structure p47 p48)
+(baked-structure p49 p50)
+(baked-structure p51 p52)
+(baked-structure p53 p54)
+(baked-structure p55 p56)
+(baked-structure p57 p58)
+(baked-structure p59 p60)
+(baked-structure p61 p62)
+(baked-structure p63 p64)
+(baked-structure p65 p66)
+(baked-structure p67 p68)
+(baked-structure p69 p70)
+(baked-structure p71 p72)
+(baked-structure p73 p74)
+(baked-structure p75 p76)
+(baked-structure p77 p78)
+(baked-structure p79 p80)
+
+))
+)

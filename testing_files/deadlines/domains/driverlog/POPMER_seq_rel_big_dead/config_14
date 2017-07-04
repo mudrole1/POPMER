@@ -1,0 +1,15 @@
+20;-g;-h;ADDR/ADDR_WORK/BUC/LIFO;-f;{n,s}LR/{l}MW_add;-l;10000;-f;{n,s}LR/{u}MW_add/{l}MW_add;-l;100000;-f;{n,s,l}LR;-l;200000;-f;{n,s,u}LR/{l}LR;-l;unlimited;-v0;
+20.00;1506.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_1.pddl;
+1546.00;3639.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_2.pddl;
+5205.00;6934.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_3.pddl;
+12159.00;14318.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_4.pddl;
+26497.00;28387.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_5.pddl;
+54904.00;56642.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_6.pddl;
+111566.00;113028.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_7.pddl;
+224614.00;226774.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_8.pddl;
+451408.00;453051.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_9.pddl;
+904479.00;906862.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_10.pddl;
+1811361.00;1813104.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_11.pddl;
+3624485.00;3626060.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_12.pddl;
+7250565.00;7252332.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_13.pddl;
+14502917.00;14504862.00;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/deadlines/domains/driverlog/separate_problems/p21_14.pddl;

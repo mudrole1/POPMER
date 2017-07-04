@@ -1,0 +1,20 @@
+;tms-2-3-light-05
+Makespan: 19.01
+0.01:(bake-ceramic3 p5 k2)[5]
+0.01:(treat-ceramic1 p4)[3]
+0.01:(bake-ceramic3 p4 k2)[5]
+0.01:(treat-ceramic2 p3)[2]
+0.01:(bake-ceramic2 p3 k2)[10]
+0.01:(treat-ceramic1 p2)[3]
+0.01:(bake-ceramic2 p2 k2)[10]
+0.01:(treat-ceramic1 p1)[3]
+0.01:(bake-ceramic1 p1 k2)[15]
+10.01:(make-structure p3 p4)[1]
+11.01:(bake-structure p3 p4 k2)[3]
+15.01:(make-structure p1 p2)[1]
+16.01:(bake-structure p1 p2 k2)[3]
+Time: 0
+;Could not send SIGTERM to process 1302
+;waited
+
+Whole time of vhpop running:

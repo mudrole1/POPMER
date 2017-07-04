@@ -1,0 +1,156 @@
+Number of literals: 675
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+[01;34mFor limits: literal goal index 0, fact (at package1 s9), is static or a precondition[00m
+[01;34mFor limits: literal goal index 1, fact (at package2 s9), is static or a precondition[00m
+[01;34mFor limits: literal goal index 2, fact (at package3 s15), is static or a precondition[00m
+All the ground actions in this problem are compression-safe
+Initial heuristic = 15.000, admissible cost estimate 32.004
+b (14.000 | 10.000)b (13.000 | 20.001)b (12.000 | 30.001)b (11.000 | 40.003)b (10.000 | 42.003)b (9.000 | 54.003)b (7.000 | 76.003)b (6.000 | 78.003)b (5.000 | 88.003)b (4.000 | 110.004)b (3.000 | 120.004)b (2.000 | 130.006)b (1.000 | 140.007)(G)
+; LP calculated the cost
+
+; Plan found with metric 142.007
+; Theoretical reachable cost 142.009
+; States evaluated so far: 37
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.23
+0.000: (drive-truck truck1 s3 s13 driver1)  [10.000]
+10.001: (drive-truck truck1 s13 s5 driver1)  [10.000]
+20.002: (drive-truck truck1 s5 s9 driver1)  [10.000]
+30.003: (drive-truck truck1 s9 s20 driver1)  [10.000]
+40.003: (load-truck package2 truck1 s20)  [2.000]
+42.003: (drive-truck truck1 s20 s9 driver1)  [10.000]
+52.003: (unload-truck package2 truck1 s9)  [2.000]
+54.003: (drive-truck truck1 s9 s23 driver1)  [10.000]
+64.003: (load-truck package1 truck1 s23)  [2.000]
+66.003: (drive-truck truck1 s23 s9 driver1)  [10.000]
+76.003: (unload-truck package1 truck1 s9)  [2.000]
+78.003: (drive-truck truck1 s9 s5 driver1)  [10.000]
+88.004: (drive-truck truck1 s5 s0 driver1)  [10.000]
+98.005: (drive-truck truck1 s0 s11 driver1)  [10.000]
+108.005: (load-truck package3 truck1 s11)  [2.000]
+110.005: (drive-truck truck1 s11 s0 driver1)  [10.000]
+120.006: (drive-truck truck1 s0 s5 driver1)  [10.000]
+130.007: (drive-truck truck1 s5 s15 driver1)  [10.000]
+140.007: (unload-truck package3 truck1 s15)  [2.000]
+
+ * All goal deadlines now no later than 142.007
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (13.000 | 10.000)b (12.000 | 20.001)b (11.000 | 30.001)b (10.000 | 32.001)b (9.000 | 44.001)b (7.000 | 66.001)b (6.000 | 68.001)b (5.000 | 78.001)b (4.000 | 90.003)b (3.000 | 100.003)b (2.000 | 110.003)b (1.000 | 120.004)(G)
+; LP calculated the cost
+
+; Plan found with metric 122.005
+; Theoretical reachable cost 122.007
+; States evaluated so far: 190
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.68
+0.000: (drive-truck truck1 s3 s10 driver1)  [10.000]
+10.001: (drive-truck truck1 s10 s9 driver1)  [10.000]
+20.002: (drive-truck truck1 s9 s20 driver1)  [10.000]
+30.002: (load-truck package2 truck1 s20)  [2.000]
+32.002: (drive-truck truck1 s20 s9 driver1)  [10.000]
+42.002: (unload-truck package2 truck1 s9)  [2.000]
+44.002: (drive-truck truck1 s9 s23 driver1)  [10.000]
+54.002: (load-truck package1 truck1 s23)  [2.000]
+56.002: (drive-truck truck1 s23 s9 driver1)  [10.000]
+66.002: (unload-truck package1 truck1 s9)  [2.000]
+68.002: (drive-truck truck1 s9 s0 driver1)  [10.000]
+78.003: (drive-truck truck1 s0 s11 driver1)  [10.000]
+88.003: (load-truck package3 truck1 s11)  [2.000]
+90.003: (drive-truck truck1 s11 s0 driver1)  [10.000]
+100.004: (drive-truck truck1 s0 s5 driver1)  [10.000]
+110.005: (drive-truck truck1 s5 s15 driver1)  [10.000]
+120.005: (unload-truck package3 truck1 s15)  [2.000]
+
+ * All goal deadlines now no later than 122.005
+(G)
+; LP calculated the cost
+
+; Plan found with metric 120.006
+; Theoretical reachable cost 120.008
+; States evaluated so far: 2185
+; States pruned based on pre-heuristic cost lower bound: 2
+; Time 6.54
+0.000: (drive-truck truck1 s3 s10 driver1)  [10.000]
+10.001: (drive-truck truck1 s10 s9 driver1)  [10.000]
+20.002: (drive-truck truck1 s9 s20 driver1)  [10.000]
+30.002: (load-truck package2 truck1 s20)  [2.000]
+32.002: (drive-truck truck1 s20 s11 driver1)  [10.000]
+42.002: (load-truck package3 truck1 s11)  [2.000]
+44.002: (drive-truck truck1 s11 s19 driver1)  [10.000]
+54.003: (drive-truck truck1 s19 s6 driver1)  [10.000]
+64.004: (drive-truck truck1 s6 s15 driver1)  [10.000]
+74.004: (unload-truck package3 truck1 s15)  [2.000]
+76.004: (drive-truck truck1 s15 s5 driver1)  [10.000]
+86.005: (drive-truck truck1 s5 s9 driver1)  [10.000]
+96.006: (drive-truck truck1 s9 s23 driver1)  [10.000]
+106.006: (load-truck package1 truck1 s23)  [2.000]
+108.006: (drive-truck truck1 s23 s9 driver1)  [10.000]
+118.006: (unload-truck package1 truck1 s9)  [2.000]
+118.006: (unload-truck package2 truck1 s9)  [2.000]
+
+ * All goal deadlines now no later than 120.006
+b (1.000 | 100.003)(G)
+; LP calculated the cost
+
+; Plan found with metric 102.003
+; Theoretical reachable cost 102.005
+; States evaluated so far: 46220
+; States pruned based on pre-heuristic cost lower bound: 11
+; Time 137.58
+0.000: (drive-truck truck1 s3 s11 driver1)  [10.000]
+10.000: (load-truck package3 truck1 s11)  [2.000]
+12.000: (drive-truck truck1 s11 s20 driver1)  [10.000]
+22.001: (drive-truck truck1 s20 s9 driver1)  [10.000]
+32.002: (drive-truck truck1 s9 s23 driver1)  [10.000]
+42.002: (load-truck package1 truck1 s23)  [2.000]
+44.002: (drive-truck truck1 s23 s9 driver1)  [10.000]
+54.002: (unload-truck package1 truck1 s9)  [2.000]
+54.002: (unload-truck package3 truck1 s9)  [2.000]
+56.002: (drive-truck truck1 s9 s20 driver1)  [10.000]
+66.002: (load-truck package2 truck1 s20)  [2.000]
+68.002: (drive-truck truck1 s20 s9 driver1)  [10.000]
+78.002: (unload-truck package2 truck1 s9)  [2.000]
+78.002: (load-truck package3 truck1 s9)  [2.000]
+80.002: (drive-truck truck1 s9 s5 driver1)  [10.000]
+90.003: (drive-truck truck1 s5 s15 driver1)  [10.000]
+100.003: (unload-truck package3 truck1 s15)  [2.000]
+
+ * All goal deadlines now no later than 102.003
+b (1.000 | 98.003)(G)
+; LP calculated the cost
+
+; Plan found with metric 100.004
+; Theoretical reachable cost 100.006
+; States evaluated so far: 49235
+; States pruned based on pre-heuristic cost lower bound: 13
+; Time 146.71
+0.000: (drive-truck truck1 s3 s11 driver1)  [10.000]
+10.000: (load-truck package3 truck1 s11)  [2.000]
+12.000: (drive-truck truck1 s11 s20 driver1)  [10.000]
+22.001: (drive-truck truck1 s20 s9 driver1)  [10.000]
+32.002: (drive-truck truck1 s9 s23 driver1)  [10.000]
+42.002: (load-truck package1 truck1 s23)  [2.000]
+44.002: (drive-truck truck1 s23 s9 driver1)  [10.000]
+54.003: (drive-truck truck1 s9 s20 driver1)  [10.000]
+64.003: (load-truck package2 truck1 s20)  [2.000]
+66.003: (drive-truck truck1 s20 s9 driver1)  [10.000]
+76.003: (unload-truck package2 truck1 s9)  [2.000]
+76.003: (unload-truck package1 truck1 s9)  [2.000]
+78.003: (drive-truck truck1 s9 s5 driver1)  [10.000]
+88.004: (drive-truck truck1 s5 s15 driver1)  [10.000]
+98.004: (unload-truck package3 truck1 s15)  [2.000]
+
+ * All goal deadlines now no later than 100.004
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+./optic.bash: line 52: 12652 Aborted                 (core dumped) ./../../../../../phd/Phd/temp_evaluation/optic_new/debug/optic/optic-cplex -v0 $domain $p
+;Could not send SIGTERM to process 12652
+;waited

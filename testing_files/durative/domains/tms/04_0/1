@@ -1,0 +1,18 @@
+(define (problem tms-2-3-light-07-1)
+  (:domain domain-tms-2-3-light)
+(:objects
+            k2 - kiln20
+            p1 - piecetype1
+            p2 - piecetype2
+            p3 - piecetype2
+            p4 - piecetype3
+            p5 - piecetype3
+            p6 - piecetype3
+            p7 - piecetype3)
+(:init
+(ready k2)
+)
+(:goal (and 
+(baked-structure p3 p4)
+))
+)

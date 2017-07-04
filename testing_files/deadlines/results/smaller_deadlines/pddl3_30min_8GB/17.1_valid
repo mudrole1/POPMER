@@ -1,0 +1,9 @@
+Checking plan: /data/Phd_final/Phd_evaluation/deadlines/results/smaller_deadlines/pddl3_30min_8GB/17.1
+Plan executed successfully - checking goal
+Plan valid
+Final value: 550.025 
+
+Successful plans:
+Value: 550.025
+ /data/Phd_final/Phd_evaluation/deadlines/results/smaller_deadlines/pddl3_30min_8GB/17.1 550.025 
+

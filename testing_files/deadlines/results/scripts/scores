@@ -1,0 +1,7 @@
+ipc-score median & ipc-score 25s & ipc-score 75s & solvedPOPMER & solvedOPTIc & 
+bigdeadlines & -32.0 & -47.0 & -28.0 & 23 & 23 \\ 
+smaller_deadlines & -38.0 & -65.0 & -30.0 & 16 & 19 \\ 
+impossible_deadlines & 0.0 & -100.0 & 0.0 & 23 & 12 \\ 
+middle_deadlines & -32.0 & -47.0 & -28.0 & 23 & 23 \\ 
+rand_rel_big_dead & -34.0 & -100.0 & -2.0 & 23 & 14 \\ 
+seq_rel_big_dead & 0.0 & -100.0 & 0.0 & 23 & 12 \\ 

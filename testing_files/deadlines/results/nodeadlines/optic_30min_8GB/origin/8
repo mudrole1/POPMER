@@ -1,0 +1,174 @@
+Number of literals: 5675
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+[01;31mLooking for achievers for goal index 0, fact (success task1 package1 s9) with fID 1275[00m
+ (task-finish-ontime package1 s9 task1)
+  Looking at numeric effects of (task-finish-ontime package1 s9 task1): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package1 s9 task1), of which there are 0
+[01;31mLooking for achievers for goal index 1, fact (success task2 package2 s9) with fID 1911[00m
+ (task-finish-ontime package2 s9 task2)
+  Looking at numeric effects of (task-finish-ontime package2 s9 task2): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package2 s9 task2), of which there are 0
+[01;31mLooking for achievers for goal index 2, fact (success task3 package3 s15) with fID 2118[00m
+ (task-finish-ontime package3 s15 task3)
+  Looking at numeric effects of (task-finish-ontime package3 s15 task3): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package3 s15 task3), of which there are 0
+[01;31mLooking for achievers for goal index 3, fact (success task4 package5 s16) with fID 2770[00m
+ (task-finish-ontime package5 s16 task4)
+  Looking at numeric effects of (task-finish-ontime package5 s16 task4): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package5 s16 task4), of which there are 0
+[01;31mLooking for achievers for goal index 4, fact (success task5 package6 s23) with fID 3596[00m
+ (task-finish-ontime package6 s23 task5)
+  Looking at numeric effects of (task-finish-ontime package6 s23 task5): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package6 s23 task5), of which there are 0
+[01;31mLooking for achievers for goal index 5, fact (success task6 package7 s18) with fID 4072[00m
+ (task-finish-ontime package7 s18 task6)
+  Looking at numeric effects of (task-finish-ontime package7 s18 task6): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package7 s18 task6), of which there are 0
+[01;31mLooking for achievers for goal index 6, fact (success task7 package8 s12) with fID 4548[00m
+ (task-finish-ontime package8 s12 task7)
+  Looking at numeric effects of (task-finish-ontime package8 s12 task7): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package8 s12 task7), of which there are 0
+[01;31mLooking for achievers for goal index 7, fact (success task8 package9 s7) with fID 5624[00m
+ (task-finish-ontime package9 s7 task8)
+  Looking at numeric effects of (task-finish-ontime package9 s7 task8): 0 and 0
+  No troublesome numerics - looking at conditional effects on (task-finish-ontime package9 s7 task8), of which there are 0
+Action 11784 - (task-finish-ontime package1 s9 task1) is uninteresting once we have fact (success task1 package1 s9)
+Action 12420 - (task-finish-ontime package2 s9 task2) is uninteresting once we have fact (success task2 package2 s9)
+Action 12627 - (task-finish-ontime package3 s15 task3) is uninteresting once we have fact (success task3 package3 s15)
+Action 13279 - (task-finish-ontime package5 s16 task4) is uninteresting once we have fact (success task4 package5 s16)
+Action 14105 - (task-finish-ontime package6 s23 task5) is uninteresting once we have fact (success task5 package6 s23)
+Action 14581 - (task-finish-ontime package7 s18 task6) is uninteresting once we have fact (success task6 package7 s18)
+Action 15057 - (task-finish-ontime package8 s12 task7) is uninteresting once we have fact (success task7 package8 s12)
+Action 16133 - (task-finish-ontime package9 s7 task8) is uninteresting once we have fact (success task8 package9 s7)
+All the ground actions in this problem are compression-safe
+Initial heuristic = 36.000, admissible cost estimate 33.005
+b (35.000 | 1.000)b (33.000 | 10.001)b (32.000 | 20.002)b (31.000 | 22.002)b (29.000 | 44.001)b (28.000 | 54.002)b (27.000 | 77.005)b (25.000 | 86.006)b (24.000 | 108.007)b (23.000 | 110.007)b (22.000 | 111.007)b (21.000 | 132.008)b (19.000 | 154.009)b (18.000 | 154.009)b (16.000 | 176.010)b (15.000 | 178.010)b (14.000 | 179.010)b (13.000 | 188.011)b (12.000 | 210.013)b (11.000 | 211.013)b (10.000 | 212.014)b (9.000 | 222.014)b (8.000 | 234.015)b (7.000 | 235.015)b (6.000 | 244.016)b (5.000 | 266.018)b (4.000 | 276.018)b (3.000 | 286.019)b (2.000 | 296.020)b (1.000 | 298.020)(G)
+; LP calculated the cost
+
+; Plan found with metric 299.020
+; Theoretical reachable cost 299.020
+; States evaluated so far: 146
+CPU consumed :12.500
+Consumed virtual memory:134496
+Consumed physical memory:93116
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 5.94
+0.000: (task-finish-ontime package9 s7 task8)  [1.000]
+0.001: (drive-truck truck1 s3 s7 driver1 task1)  [10.000]
+10.002: (drive-truck truck1 s7 s19 driver1 task1)  [10.000]
+20.002: (load-truck package8 truck1 s19 task1)  [2.000]
+22.002: (drive-truck truck1 s19 s7 driver1 task1)  [10.000]
+32.002: (load-truck package5 truck1 s7 task1)  [2.000]
+34.002: (drive-truck truck1 s7 s19 driver1 task1)  [10.000]
+44.003: (drive-truck truck1 s19 s18 driver1 task1)  [10.000]
+54.004: (drive-truck truck1 s18 s0 driver1 task1)  [10.000]
+64.005: (drive-truck truck1 s0 s16 driver1 task1)  [10.000]
+74.005: (unload-truck package5 truck1 s16 task1)  [2.000]
+76.005: (task-finish-ontime package5 s16 task4)  [1.000]
+76.006: (drive-truck truck1 s16 s9 driver1 task1)  [10.000]
+86.007: (drive-truck truck1 s9 s23 driver1 task1)  [10.000]
+96.007: (load-truck package1 truck1 s23 task1)  [2.000]
+98.007: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+108.007: (unload-truck package1 truck1 s9 task1)  [2.000]
+110.007: (task-finish-ontime package1 s9 task1)  [1.000]
+110.008: (drive-truck truck1 s9 s20 driver1 task1)  [10.000]
+120.008: (load-truck package6 truck1 s20 task1)  [2.000]
+122.008: (drive-truck truck1 s20 s9 driver1 task1)  [10.000]
+132.009: (drive-truck truck1 s9 s23 driver1 task1)  [10.000]
+142.009: (unload-truck package6 truck1 s23 task1)  [2.000]
+144.009: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+144.010: (task-finish-ontime package6 s23 task5)  [1.000]
+154.010: (drive-truck truck1 s9 s20 driver1 task1)  [10.000]
+164.010: (load-truck package2 truck1 s20 task1)  [2.000]
+166.010: (drive-truck truck1 s20 s9 driver1 task1)  [10.000]
+176.010: (unload-truck package2 truck1 s9 task1)  [2.000]
+178.010: (task-finish-ontime package2 s9 task2)  [1.000]
+178.011: (drive-truck truck1 s9 s5 driver1 task1)  [10.000]
+188.012: (drive-truck truck1 s5 s0 driver1 task1)  [10.000]
+198.013: (drive-truck truck1 s0 s12 driver1 task1)  [10.000]
+208.013: (unload-truck package8 truck1 s12 task1)  [2.000]
+210.013: (task-finish-ontime package8 s12 task7)  [1.000]
+210.014: (load-truck package7 truck1 s12 task1)  [2.000]
+212.014: (drive-truck truck1 s12 s0 driver1 task1)  [10.000]
+222.015: (drive-truck truck1 s0 s18 driver1 task1)  [10.000]
+232.015: (unload-truck package7 truck1 s18 task1)  [2.000]
+234.015: (task-finish-ontime package7 s18 task6)  [1.000]
+234.016: (drive-truck truck1 s18 s5 driver1 task1)  [10.000]
+244.017: (drive-truck truck1 s5 s0 driver1 task1)  [10.000]
+254.018: (drive-truck truck1 s0 s11 driver1 task1)  [10.000]
+264.018: (load-truck package3 truck1 s11 task1)  [2.000]
+266.018: (drive-truck truck1 s11 s0 driver1 task1)  [10.000]
+276.019: (drive-truck truck1 s0 s5 driver1 task1)  [10.000]
+286.020: (drive-truck truck1 s5 s15 driver1 task1)  [10.000]
+296.020: (unload-truck package3 truck1 s15 task1)  [2.000]
+298.020: (task-finish-ontime package3 s15 task3)  [1.000]
+
+ * All goal deadlines now no later than 299.020
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (35.000 | 10.000)b (34.000 | 10.000)b (33.000 | 10.000)b (32.000 | 20.001)b (31.000 | 22.002)b (29.000 | 44.001)b (28.000 | 54.002)b (27.000 | 57.002)b (26.000 | 66.002)b (25.000 | 66.002)b (24.000 | 88.003)b (24.000 | 78.005)b (22.000 | 88.005)b (21.000 | 90.005)b (20.000 | 91.005)b (19.000 | 113.007)b (19.000 | 112.008)b (18.000 | 114.008)b (17.000 | 124.008)b (16.000 | 134.009)b (15.000 | 137.009)b (14.000 | 146.010)b (13.000 | 156.011)b (12.000 | 169.012)b (12.000 | 168.013)b (11.000 | 178.013)b (11.000 | 170.013)b (9.000 | 180.013)b (8.000 | 182.013)b (7.000 | 183.013)b (6.000 | 192.014)b (5.000 | 204.015)b (4.000 | 214.015)b (3.000 | 224.016)b (2.000 | 234.017)b (1.000 | 236.017)(G)
+; LP calculated the cost
+
+; Plan found with metric 237.017
+; Theoretical reachable cost 237.017
+; States evaluated so far: 5612
+CPU consumed :12.493
+Consumed virtual memory:279008
+Consumed physical memory:237476
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 115.04
+0.000: (drive-truck truck1 s3 s16 driver1 task1)  [10.000]
+0.001: (task-finish-ontime package9 s7 task8)  [1.000]
+10.001: (drive-truck truck1 s16 s19 driver1 task1)  [10.000]
+20.002: (load-truck package8 truck1 s19 task1)  [2.000]
+22.002: (drive-truck truck1 s19 s7 driver1 task1)  [10.000]
+32.002: (load-truck package5 truck1 s7 task1)  [2.000]
+34.002: (drive-truck truck1 s7 s19 driver1 task1)  [10.000]
+44.003: (drive-truck truck1 s19 s16 driver1 task1)  [10.000]
+54.003: (unload-truck package5 truck1 s16 task1)  [2.000]
+56.003: (drive-truck truck1 s16 s9 driver1 task1)  [10.000]
+56.004: (task-finish-ontime package5 s16 task4)  [1.000]
+66.004: (drive-truck truck1 s9 s20 driver1 task1)  [10.000]
+76.004: (load-truck package6 truck1 s20 task1)  [2.000]
+76.005: (load-truck package2 truck1 s20 task1)  [2.000]
+78.005: (drive-truck truck1 s20 s9 driver1 task1)  [10.000]
+88.005: (unload-truck package2 truck1 s9 task1)  [2.000]
+90.005: (task-finish-ontime package2 s9 task2)  [1.000]
+90.006: (drive-truck truck1 s9 s0 driver1 task1)  [10.000]
+100.007: (drive-truck truck1 s0 s12 driver1 task1)  [10.000]
+110.007: (unload-truck package8 truck1 s12 task1)  [2.000]
+112.007: (task-finish-ontime package8 s12 task7)  [1.000]
+112.008: (load-truck package7 truck1 s12 task1)  [2.000]
+114.008: (drive-truck truck1 s12 s0 driver1 task1)  [10.000]
+124.009: (drive-truck truck1 s0 s18 driver1 task1)  [10.000]
+134.009: (unload-truck package7 truck1 s18 task1)  [2.000]
+136.009: (task-finish-ontime package7 s18 task6)  [1.000]
+136.010: (drive-truck truck1 s18 s5 driver1 task1)  [10.000]
+146.011: (drive-truck truck1 s5 s9 driver1 task1)  [10.000]
+156.012: (drive-truck truck1 s9 s23 driver1 task1)  [10.000]
+166.012: (unload-truck package6 truck1 s23 task1)  [2.000]
+168.012: (task-finish-ontime package6 s23 task5)  [1.000]
+168.013: (load-truck package1 truck1 s23 task1)  [2.000]
+170.013: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+180.013: (unload-truck package1 truck1 s9 task1)  [2.000]
+182.013: (task-finish-ontime package1 s9 task1)  [1.000]
+182.014: (drive-truck truck1 s9 s0 driver1 task1)  [10.000]
+192.015: (drive-truck truck1 s0 s11 driver1 task1)  [10.000]
+202.015: (load-truck package3 truck1 s11 task1)  [2.000]
+204.015: (drive-truck truck1 s11 s0 driver1 task1)  [10.000]
+214.016: (drive-truck truck1 s0 s5 driver1 task1)  [10.000]
+224.017: (drive-truck truck1 s5 s15 driver1 task1)  [10.000]
+234.017: (unload-truck package3 truck1 s15 task1)  [2.000]
+236.017: (task-finish-ontime package3 s15 task3)  [1.000]
+
+ * All goal deadlines now no later than 237.017
+b (1.000 | 236.016)(G)b (0.000 | 237.017)./optic.bash: line 44:  9680 Killed                  ./../../../../../phd/Phd/temp_evaluation/optic/debug/optic/optic-clp -F -T -v0 $domain $p
+;Could not send SIGTERM to process 9680
+;waited
