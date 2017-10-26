@@ -1,0 +1,20 @@
+; Plan found with metric 57.004
+; Theoretical reachable cost 57.004
+; States evaluated so far: 20625
+;CPU consumed :12.498
+;Consumed virtual memory:1499708
+;Consumed physical memory:1458268
+; States pruned based on pre-heuristic cost lower bound: 4160
+; Time 119.62
+0.000: (drive-truck truck1 s3 s16 driver1 task1)  [10.000]
+10.001: (drive-truck truck1 s16 s23 driver1 task1)  [10.000]
+20.002: (load-truck package1 truck1 s23 task1)  [2.000]
+22.002: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+32.003: (drive-truck truck1 s9 s20 driver1 task1)  [10.000]
+42.003: (load-truck package2 truck1 s20 task1)  [2.000]
+44.003: (drive-truck truck1 s20 s9 driver1 task1)  [10.000]
+54.003: (unload-truck package2 truck1 s9 task1)  [2.000]
+54.004: (unload-truck package1 truck1 s9 task1)  [2.000]
+56.003: (task-finish-ontime package2 s9 task2)  [1.000]
+56.004: (task-finish-ontime package1 s9 task1)  [1.000]
+

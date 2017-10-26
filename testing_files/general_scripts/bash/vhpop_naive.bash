@@ -1,9 +1,10 @@
 #!/bin/bash
 
-FILES=/data/Phd_final/Phd_evaluation/durative/domains/tms/orig_problems/tms-2-3-light-*
-RESULT=/data/Phd_final/Phd_evaluation/durative/results/tms/vhpop_30min_6GB/
+#FILES=/data/Phd_final/Phd_evaluation/durative/domains/tms/orig_problems/tms-2-3-light-*
+FILES=/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/co_origin/p21_M*
+RESULT=/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/o_vhpop_full_30min_6GB/
 i=0
-domain=/data/Phd_final/Phd_evaluation/durative/domains/tms/domain-itsat.pddl
+domain=/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl
 time_considered="false"
 
 size=$((${#FILES}-1))
@@ -54,7 +55,7 @@ do
   #./../../../../../phd/Phd/temp_evaluation/vhpop-pure/vhpop/vhpop -g $h $f $domain $p &
 
    #original vhpop
-  ./../../../../phd/Phd/temp_evaluation/vhpop-pure/vhpop/vhpop $domain $p &
+  ./../../../../vhpop/vhpop $domain $p &
 
   pid=$!
 

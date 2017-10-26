@@ -1,9 +1,9 @@
 20;-g;-h;ADDR/ADDR_WORK/BUC/LIFO;-f;{n,s}LR/{l}MW_add;-l;10000;-f;{n,s}LR/{u}MW_add/{l}MW_add;-l;100000;-f;{n,s,l}LR;-l;200000;-f;{n,s,u}LR/{l}LR;-l;unlimited;-v0;
-0.00;412.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_1.pddl;
-0.00;336.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_2.pddl;
-0.00;350.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_3.pddl;
-0.00;440.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_4.pddl;
-0.00;449.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_5.pddl;
-0.00;304.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_6.pddl;
-0.00;295.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_7.pddl;
-0.00;456.02;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/domain.pddl;/data/Phd_final/Phd_evaluation/durative/domains/driverlog/separate_problems/p21_8.pddl;
+0.00;412.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_1.pddl;
+0.00;336.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_2.pddl;
+0.00;350.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_3.pddl;
+0.00;440.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_4.pddl;
+0.00;449.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_5.pddl;
+0.00;304.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_6.pddl;
+0.00;295.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_7.pddl;
+0.00;456.02;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/domain.pddl;/home/lenka/PostDoc/POPMER/testing_files/durative/domains/driverlog/separate_problems/p21_8.pddl;

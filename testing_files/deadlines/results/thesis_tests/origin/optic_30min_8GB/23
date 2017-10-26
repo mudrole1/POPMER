@@ -1,0 +1,142 @@
+Number of literals: 747
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+[01;34mFor limits: literal goal index 0, fact (at package1 s9), is static or a precondition[00m
+[01;34mFor limits: literal goal index 1, fact (at package2 s9), is static or a precondition[00m
+[01;34mFor limits: literal goal index 2, fact (at package3 s15), is static or a precondition[00m
+[01;34mFor limits: literal goal index 3, fact (at package5 s16), is static or a precondition[00m
+[01;34mFor limits: literal goal index 4, fact (at package6 s23), is static or a precondition[00m
+[01;34mFor limits: literal goal index 5, fact (at package7 s18), is static or a precondition[00m
+[01;34mFor limits: literal goal index 6, fact (at package8 s12), is static or a precondition[00m
+[01;34mFor limits: literal goal index 7, fact (at package9 s7), is static or a precondition[00m
+[01;34mFor limits: literal goal index 8, fact (at package10 s22), is static or a precondition[00m
+[01;34mFor limits: literal goal index 9, fact (at package11 s20), is static or a precondition[00m
+[01;34mFor limits: literal goal index 10, fact (at package12 s16), is static or a precondition[00m
+[01;34mFor limits: literal goal index 11, fact (at package13 s2), is static or a precondition[00m
+[01;34mFor limits: literal goal index 12, fact (at package14 s19), is static or a precondition[00m
+[01;34mFor limits: literal goal index 13, fact (at package15 s1), is static or a precondition[00m
+[01;34mFor limits: literal goal index 14, fact (at package16 s21), is static or a precondition[00m
+[01;34mFor limits: literal goal index 15, fact (at package17 s8), is static or a precondition[00m
+[01;34mFor limits: literal goal index 16, fact (at package18 s2), is static or a precondition[00m
+[01;34mFor limits: literal goal index 17, fact (at package19 s10), is static or a precondition[00m
+[01;34mFor limits: literal goal index 18, fact (at package20 s13), is static or a precondition[00m
+[01;34mFor limits: literal goal index 19, fact (at package21 s9), is static or a precondition[00m
+[01;34mFor limits: literal goal index 20, fact (at package22 s23), is static or a precondition[00m
+[01;34mFor limits: literal goal index 21, fact (at package23 s10), is static or a precondition[00m
+[01;34mFor limits: literal goal index 22, fact (at package24 s1), is static or a precondition[00m
+All the ground actions in this problem are compression-safe
+Initial heuristic = 62.000, admissible cost estimate 32.004
+b (61.000 | 10.000)b (60.000 | 22.001)b (59.000 | 22.002)b (58.000 | 44.002)b (57.000 | 46.002)b (56.000 | 66.003)b (55.000 | 88.004)b (54.000 | 110.005)b (53.000 | 112.005)b (52.000 | 134.005)b (51.000 | 156.006)b (50.000 | 178.007)b (49.000 | 200.008)b (47.000 | 222.009)b (46.000 | 224.009)b (45.000 | 234.009)b (44.000 | 256.010)b (43.000 | 258.010)b (42.000 | 258.010)b (41.000 | 278.011)b (40.000 | 300.012)b (39.000 | 322.013)b (38.000 | 344.014)b (37.000 | 356.015)b (36.000 | 366.015)b (35.000 | 388.016)b (34.000 | 410.018)b (33.000 | 442.019)b (31.000 | 452.020)b (30.000 | 464.021)b (29.000 | 474.021)b (28.000 | 496.022)b (26.000 | 518.023)b (25.000 | 540.024)b (24.000 | 550.025)b (23.000 | 560.026)b (22.000 | 562.026)b (21.000 | 584.026)b (19.000 | 606.027)b (18.000 | 628.028)b (17.000 | 660.030)b (16.000 | 670.031)b (15.000 | 692.032)b (14.000 | 712.034)b (13.000 | 734.035)b (11.000 | 756.036)b (10.000 | 768.037)b (9.000 | 778.037)b (8.000 | 800.038)
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (61.000 | 10.000)b (61.000 | 2.000)b (60.000 | 12.001)b (59.000 | 12.001)b (58.000 | 34.003)b (57.000 | 34.004)b (56.000 | 34.004)b (55.000 | 46.004)b (54.000 | 56.004)b (53.000 | 58.004)b (52.000 | 78.006)b (51.000 | 100.007)b (50.000 | 102.007)b (49.000 | 124.007)b (48.000 | 176.011)b (48.000 | 168.009)b (47.000 | 168.009)b (46.000 | 178.010)b (45.000 | 180.009)b (44.000 | 180.010)b (43.000 | 202.011)b (42.000 | 224.012)b (40.000 | 246.013)b (40.000 | 238.013)b (39.000 | 258.013)b (39.000 | 248.013)b (39.000 | 238.014)b (38.000 | 258.014)b (38.000 | 248.014)b (38.000 | 238.015)b (37.000 | 258.015)b (37.000 | 248.015)b (35.000 | 258.016)b (34.000 | 300.019)b (34.000 | 290.019)b (33.000 | 300.020)b (32.000 | 300.020)b (29.000 | 332.022)b (28.000 | 334.021)b (27.000 | 334.022)b (26.000 | 334.023)b (25.000 | 346.023)b (23.000 | 366.025)b (22.000 | 368.024)b (21.000 | 368.025)b (19.000 | 368.026)b (18.000 | 370.026)b (17.000 | 392.028)b (16.000 | 404.028)b (15.000 | 412.029)b (13.000 | 414.028)b (12.000 | 426.029)b (11.000 | 436.029)b (10.000 | 446.030)b (9.000 | 448.030)b (8.000 | 468.031)b (8.000 | 460.030)b (7.000 | 470.030)b (6.000 | 470.030)b (5.000 | 482.031)b (4.000 | 482.032)b (3.000 | 492.032)b (2.000 | 502.033)b (1.000 | 512.034)(G)
+; LP calculated the cost
+
+; Plan found with metric 514.035
+; Theoretical reachable cost 514.035
+; States evaluated so far: 7779
+CPU consumed :12.496
+Consumed virtual memory:456340
+Consumed physical memory:414948
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 56.75
+0.000: (drive-truck truck1 s3 s10 driver1)  [10.000]
+10.001: (load-truck package20 truck1 s10)  [2.000]
+10.002: (load-truck package16 truck1 s10)  [2.000]
+12.002: (drive-truck truck1 s10 s22 driver1)  [10.000]
+22.003: (drive-truck truck1 s22 s21 driver1)  [10.000]
+32.003: (unload-truck package16 truck1 s21)  [2.000]
+32.004: (load-truck package24 truck1 s21)  [2.000]
+32.005: (load-truck package11 truck1 s21)  [2.000]
+34.005: (drive-truck truck1 s21 s3 driver1)  [10.000]
+44.005: (load-truck package10 truck1 s3)  [2.000]
+46.005: (drive-truck truck1 s3 s11 driver1)  [10.000]
+56.005: (load-truck package3 truck1 s11)  [2.000]
+58.005: (drive-truck truck1 s11 s0 driver1)  [10.000]
+68.006: (drive-truck truck1 s0 s9 driver1)  [10.000]
+78.007: (drive-truck truck1 s9 s23 driver1)  [10.000]
+88.007: (load-truck package1 truck1 s23)  [2.000]
+90.007: (drive-truck truck1 s23 s9 driver1)  [10.000]
+100.007: (unload-truck package1 truck1 s9)  [2.000]
+102.007: (drive-truck truck1 s9 s5 driver1)  [10.000]
+112.007: (load-truck package18 truck1 s5)  [2.000]
+114.007: (drive-truck truck1 s5 s0 driver1)  [10.000]
+124.008: (drive-truck truck1 s0 s11 driver1)  [10.000]
+134.009: (drive-truck truck1 s11 s19 driver1)  [10.000]
+144.009: (load-truck package8 truck1 s19)  [2.000]
+146.009: (drive-truck truck1 s19 s7 driver1)  [10.000]
+156.009: (load-truck package5 truck1 s7)  [2.000]
+158.009: (drive-truck truck1 s7 s1 driver1)  [10.000]
+168.009: (unload-truck package24 truck1 s1)  [2.000]
+168.010: (load-truck package19 truck1 s1)  [2.000]
+170.010: (drive-truck truck1 s1 s18 driver1)  [10.000]
+180.010: (load-truck package22 truck1 s18)  [2.000]
+182.010: (drive-truck truck1 s18 s0 driver1)  [10.000]
+192.011: (drive-truck truck1 s0 s9 driver1)  [10.000]
+202.012: (drive-truck truck1 s9 s23 driver1)  [10.000]
+212.012: (unload-truck package22 truck1 s23)  [2.000]
+214.012: (drive-truck truck1 s23 s22 driver1)  [10.000]
+224.012: (unload-truck package10 truck1 s22)  [2.000]
+226.012: (drive-truck truck1 s22 s12 driver1)  [10.000]
+236.012: (unload-truck package8 truck1 s12)  [2.000]
+236.013: (load-truck package7 truck1 s12)  [2.000]
+236.014: (load-truck package23 truck1 s12)  [2.000]
+236.015: (load-truck package13 truck1 s12)  [2.000]
+238.015: (drive-truck truck1 s12 s0 driver1)  [10.000]
+248.016: (drive-truck truck1 s0 s9 driver1)  [10.000]
+258.017: (drive-truck truck1 s9 s1 driver1)  [10.000]
+268.018: (drive-truck truck1 s1 s13 driver1)  [10.000]
+278.018: (unload-truck package20 truck1 s13)  [2.000]
+278.019: (load-truck package12 truck1 s13)  [2.000]
+280.019: (drive-truck truck1 s13 s1 driver1)  [10.000]
+290.020: (drive-truck truck1 s1 s14 driver1)  [10.000]
+300.021: (drive-truck truck1 s14 s2 driver1)  [10.000]
+310.021: (unload-truck package18 truck1 s2)  [2.000]
+310.022: (unload-truck package13 truck1 s2)  [2.000]
+312.022: (drive-truck truck1 s2 s16 driver1)  [10.000]
+322.022: (unload-truck package5 truck1 s16)  [2.000]
+322.023: (unload-truck package12 truck1 s16)  [2.000]
+322.024: (load-truck package14 truck1 s16)  [2.000]
+324.024: (drive-truck truck1 s16 s19 driver1)  [10.000]
+334.024: (unload-truck package14 truck1 s19)  [2.000]
+336.024: (drive-truck truck1 s19 s11 driver1)  [10.000]
+346.025: (drive-truck truck1 s11 s20 driver1)  [10.000]
+356.025: (unload-truck package11 truck1 s20)  [2.000]
+356.026: (load-truck package6 truck1 s20)  [2.000]
+356.027: (load-truck package2 truck1 s20)  [2.000]
+358.027: (drive-truck truck1 s20 s9 driver1)  [10.000]
+368.027: (unload-truck package2 truck1 s9)  [2.000]
+370.027: (drive-truck truck1 s9 s23 driver1)  [10.000]
+380.028: (drive-truck truck1 s23 s17 driver1)  [10.000]
+390.028: (load-truck package17 truck1 s17)  [2.000]
+390.029: (load-truck package15 truck1 s17)  [2.000]
+392.029: (drive-truck truck1 s17 s23 driver1)  [10.000]
+402.029: (unload-truck package6 truck1 s23)  [2.000]
+404.029: (drive-truck truck1 s23 s9 driver1)  [10.000]
+414.030: (drive-truck truck1 s9 s8 driver1)  [10.000]
+424.030: (unload-truck package17 truck1 s8)  [2.000]
+426.030: (drive-truck truck1 s8 s0 driver1)  [10.000]
+436.031: (drive-truck truck1 s0 s18 driver1)  [10.000]
+446.031: (unload-truck package7 truck1 s18)  [2.000]
+448.031: (drive-truck truck1 s18 s1 driver1)  [10.000]
+458.031: (unload-truck package15 truck1 s1)  [2.000]
+460.031: (drive-truck truck1 s1 s9 driver1)  [10.000]
+470.032: (drive-truck truck1 s9 s10 driver1)  [10.000]
+480.032: (unload-truck package23 truck1 s10)  [2.000]
+480.033: (unload-truck package19 truck1 s10)  [2.000]
+482.033: (drive-truck truck1 s10 s9 driver1)  [10.000]
+492.034: (drive-truck truck1 s9 s5 driver1)  [10.000]
+502.035: (drive-truck truck1 s5 s15 driver1)  [10.000]
+512.035: (unload-truck package3 truck1 s15)  [2.000]
+
+ * All goal deadlines now no later than 514.035
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+./optic.bash: line 51:  9294 Aborted                 (core dumped) ./../../../../../phd/Phd/temp_evaluation/optic/debug/optic/optic-clp -F -T -v0 $domain $p
+;Could not send SIGTERM to process 9294
+;waited

@@ -1,0 +1,29 @@
+; Plan found with metric 894.022
+; Theoretical reachable cost 894.024
+; States evaluated so far: 860
+; States pruned based on pre-heuristic cost lower bound: 4
+; Time 6.71
+20.001: (drive-truck truck1 s3 s11 driver1 task1)  [10.000]
+30.002: (drive-truck truck1 s11 s20 driver1 task1)  [10.000]
+40.003: (drive-truck truck1 s20 s9 driver1 task1)  [10.000]
+50.004: (drive-truck truck1 s9 s23 driver1 task1)  [10.000]
+60.004: (load-truck package1 truck1 s23 task1)  [2.000]
+232.008: (drive-truck truck1 s23 s9 driver1 task1)  [10.000]
+242.008: (unload-truck package1 truck1 s9 task1)  [2.000]
+244.008: (drive-truck truck1 s9 s20 driver1 task1)  [10.000]
+253.008: (task-finish-ontime package1 s9 task1)  [1.000]
+294.010: (load-truck package2 truck1 s20 task2)  [2.000]
+296.010: (drive-truck truck1 s20 s9 driver1 task2)  [10.000]
+306.010: (unload-truck package2 truck1 s9 task2)  [2.000]
+308.010: (task-finish-ontime package2 s9 task2)  [1.000]
+521.009: (load-truck package2 truck1 s9 task2)  [2.000]
+523.009: (drive-truck truck1 s9 s0 driver1 task2)  [10.000]
+533.009: (unload-truck package2 truck1 s0 task2)  [2.000]
+849.020: (drive-truck truck1 s0 s11 driver1 task3)  [10.000]
+859.020: (load-truck package3 truck1 s11 task3)  [2.000]
+861.020: (drive-truck truck1 s11 s0 driver1 task3)  [10.000]
+871.021: (drive-truck truck1 s0 s5 driver1 task3)  [10.000]
+881.022: (drive-truck truck1 s5 s15 driver1 task3)  [10.000]
+891.022: (unload-truck package3 truck1 s15 task3)  [2.000]
+893.022: (task-finish-ontime package3 s15 task3)  [1.000]
+

@@ -38,8 +38,8 @@ do
 
   start=$(date +%s.%N)
 
-  vhpop="./../../../../phd/Phd/temp_evaluation/vhpop-run/vhpop/vhpop"
-  ./../../../POPMER-build-Debug/Merging $f $vhpop &
+  vhpop="./../../../../vhpop/vhpop"
+  ./../../../../build-Merging-Desktop-Debug/Merging $f $vhpop &
   #./Merging $f &
 
   pid=$!

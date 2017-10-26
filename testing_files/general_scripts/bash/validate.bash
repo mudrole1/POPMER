@@ -39,6 +39,7 @@ do
       output=$RESULT$out
     fi
   j=1
+
   while true
   do
 
@@ -48,12 +49,14 @@ do
       
       test=$output
       save=$output$str  
-      #echo "save:"$save
+      echo "save:"$save
     else
       #echo $output
       test=$output"."$j
       
       save=$test$str
+      echo "save:"$save
+
     fi
 
 
@@ -65,7 +68,7 @@ do
       echo "plan:"$test
       #echo "tolerance:"$tolerance
 
-      ./../c/VAL-4.2.09/validate -t $tolerance $domain $p $test >> $save
+      ./../c/VAL/validate -t $tolerance $domain $p $test >> $save
       if [ "$type" == "$mymerge" ]
       then
          break;

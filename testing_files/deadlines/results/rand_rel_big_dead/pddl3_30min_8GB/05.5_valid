@@ -1,9 +1,0 @@
-Checking plan: /data/Phd_final/Phd_evaluation/deadlines/results/rand_rel_big_dead/pddl3_30min_8GB/05.5
-Plan executed successfully - checking goal
-Plan valid
-Final value: 757.005 
-
-Successful plans:
-Value: 757.005
- /data/Phd_final/Phd_evaluation/deadlines/results/rand_rel_big_dead/pddl3_30min_8GB/05.5 757.005 
-

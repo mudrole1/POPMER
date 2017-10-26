@@ -27,6 +27,8 @@ popmer_makespan = []
 popmer_valid = []
 popmer_time = []
 popmer_rel_time = []
+popmer_time_new = []
+popmer_rel_time_new = []
 popmer_memory = []
 popmer_rel_memory = []
 
@@ -39,25 +41,25 @@ vhpop_uni_valid = []
 vhpop_uni_time = []
 vhpop_uni_memory = []
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/makespan','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/makespan','r') as filei:
   for line in filei:
      makespans = line.split(";")
      value=makespans[len(makespans)-2]
      popmer_makespan.append(float(value))
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_sequence_30min_8GB/makespan','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_sequence_30min_8GB/makespan','r') as filei:
    for line in filei:
     makespans = line.split(";")
     value=makespans[len(makespans)-2] 
     vhpop_seq_makespan.append(float(value))
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/makespan','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/makespan','r') as filei:
    for line in filei:
     makespans = line.split(";")
     value=makespans[len(makespans)-2] 
     vhpop_uni_makespan.append(float(value))
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/memory_6GB','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/memory_6GB','r') as filei:
    for line in filei:
     makespans = line.split(" ")
     if(len(makespans) > 2):
@@ -65,7 +67,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3
       vhpop_uni_memory.append(float(value)/1024.0)
 
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/real_runtime','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/real_runtime','r') as filei:
    for line in filei:
     makespans = line.split("\n")
     if(makespans[0] == " "):
@@ -74,7 +76,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3
       value=makespans[0] 
       vhpop_uni_time.append(float(value))
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/valid','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -87,7 +89,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPM
        invalid = invalid+1
     x=x+1
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_sequence_30min_8GB/valid','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_sequence_30min_8GB/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -100,7 +102,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3
        invalid = invalid+1
     x=x+1
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/valid','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/ipc3_vhpop_full_30min_8GB/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -139,8 +141,17 @@ for i in range(0,len(popmer_valid)):
       elif(popmer_valid[i] < vhpop_uni_valid[lastIndex]): #my merge found sol, but the other not
          vhpop_uni_score.append(0)
 
+#reading in popmer new time------------
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/new_time/POPMER_IPCVHPOP_30min_8GB/real_runtime','r') as filei:
+  for line in filei:
+     makespans = line.split("\n")
+     if(makespans[0] != " "):
+       value=makespans[0]
+       popmer_time_new.append(float(value))
+       popmer_rel_time_new.append(1)
+
 #reading in popmer time------------
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/real_runtime','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/real_runtime','r') as filei:
   for line in filei:
      makespans = line.split("\n")
      if(makespans[0] != " "):
@@ -149,7 +160,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPM
        popmer_rel_time.append(1)
 
 #reading in popmer memory------------
-with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/memory','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/POPMER_IPCVHPOP_30min_8GB/memory','r') as filei:
   for line in filei:
      makespans = line.split(" ")
      if(makespans[0] != ""):
@@ -208,7 +219,7 @@ tfd_one_memory = []
 yahsp_one_memory = []
 
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/optic_30min_6GB/real_runtime','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/optic_30min_6GB/real_runtime','r') as filei:
   it = 0
   for line in filei:
     makespans = line.split(" ")
@@ -217,7 +228,7 @@ with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/optic_30min
        it = it +1 
        optic_x.append(it)
 
-with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/optic_30min_6GB/memory','r') as filei:
+with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/optic_30min_6GB/memory','r') as filei:
   it = 0
   for line in filei:
     makespans = line.split(" ")
@@ -241,7 +252,7 @@ for plan in PLANNERS:
   it=1
   if((plan == "tfd") or (plan=="yahsp") or (plan == "itsat")):
    
-   with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/'+plan+'_30min_6GB/sep_time','r') as filei:
+   with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/'+plan+'_30min_6GB/sep_time','r') as filei:
  
 
     for line in filei:
@@ -318,7 +329,7 @@ for plan in PLANNERS:
   it=1
   if((plan == "tfd") or (plan=="yahsp") or (plan == "itsat")):
    
-   with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/'+plan+'_30min_6GB/sep_memory','r') as filei:
+   with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/'+plan+'_30min_6GB/sep_memory','r') as filei:
     for line in filei:
      temp = []
      makespans = line.split(";")
@@ -388,7 +399,7 @@ for plan in PLANNERS:
 
   
   it =1
-  with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/'+plan+'_30min_6GB/makespan','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/'+plan+'_30min_6GB/makespan','r') as filei:
     for line in filei:
      makespans = line.split(";")
      value=makespans[len(makespans)-2] #-1 gives \n, -2 the last number
@@ -414,7 +425,7 @@ for plan in PLANNERS:
 
 
   #VALID----------
-  with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/'+plan+'_30min_6GB/valid','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/'+plan+'_30min_6GB/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -508,7 +519,7 @@ for dae in DAES:
   dae_index = [None]*23
   it =1
   #if(dae == "2014"):
-  with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/dae_30min_6GB_'+dae+'/sep_time','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/dae_30min_6GB_'+dae+'/sep_time','r') as filei:
     for line in filei:
      temp =[]
      makespans = line.split(";")
@@ -545,7 +556,7 @@ for dae in DAES:
      it = it +1
 
   it =1
-  with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/dae_30min_6GB_'+dae+'/sep_memory','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/dae_30min_6GB_'+dae+'/sep_memory','r') as filei:
     for line in filei:
      makespans = line.split(";")
      temp = []
@@ -579,7 +590,7 @@ for dae in DAES:
 
   it=0
   it2=1
-  with open('/data/Phd_final/Phd_evaluation/durative/results/driverlog/dae_30min_6GB_'+dae+'/makespan','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/driverlog/dae_30min_6GB_'+dae+'/makespan','r') as filei:
     for line in filei:
      makespans = line.split(";")
      if(len(makespans) != dae_amount[it]):
@@ -670,7 +681,7 @@ pyplot.plot(popmer_valid,dae_score,color='#a68900', linestyle='None', markeredge
 
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/g-RIPCscore1.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/g-RIPCscore1.svg',bbox_inches='tight',  format = 'svg')
 
 #print "scores"
 #print "popmer", sum(popmer_score)
@@ -756,7 +767,7 @@ pyplot.plot(popmer_valid,optic_score,color='#f4651a', linestyle='None', markered
 
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/g-RIPCscore2.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/g-RIPCscore2.svg',bbox_inches='tight',  format = 'svg')
 
 
 
@@ -785,15 +796,18 @@ pyplot.grid(b=True,which='major')
 max_time = [1800]*26
 max_x = range(0,26)
 
+print popmer_time_new
+print range(1,24)
 pyplot.plot(max_x,max_time,color='red', linestyle='-', label='maximal allowed time')
 pyplot.plot(dae_x,dae_time,color='#a68900', linestyle='None', markeredgecolor='#a68900', marker='D', label='DAE$_{YAHSP}$(2014)')
 pyplot.plot(tfd_x,tfd_time,color='#3d697a', linestyle='None', markeredgecolor='#3d697a', marker='v', label='TFD')
 pyplot.plot(yahsp_x,yahsp_time,color='#f4651a', linestyle='None', markeredgecolor='#f4651a', marker='*', label='YAHSP')
 pyplot.plot(popmer_valid,popmer_time,color='#1b2c3f', linestyle='-', markeredgecolor='#1b2c3f', marker='o', label='POPMER$_{IPC3-VHPOP}$')
+pyplot.plot(range(1,24),popmer_time_new,color='red', linestyle='-', markeredgecolor='red', marker='o', label='POPMER$_{IPC3-VHPOP}$')
 
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/time.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/time.svg',bbox_inches='tight',  format = 'svg')
 
 
 
@@ -828,7 +842,7 @@ pyplot.plot(yahsp_x2,yahsp_memory,color='#f4651a', linestyle='None', markeredgec
 pyplot.plot(popmer_valid,popmer_memory,color='#1b2c3f', linestyle='-', markeredgecolor='#1b2c3f', marker='o', label='POPMER$_{IPC3-VHPOP}$')
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/memory.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/memory.svg',bbox_inches='tight',  format = 'svg')
 
 #----------MEMORY vs SCORE
 
@@ -884,7 +898,7 @@ pyplot.plot(popmer_border_x,popmer_border_y,color='#1b2c3f', linestyle='None', m
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
 
-pyplot.savefig('driverlog/memoryvscore'+str(problemID)+'.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/memoryvscore'+str(problemID)+'.svg',bbox_inches='tight',  format = 'svg')
 
 
 
@@ -941,7 +955,7 @@ pyplot.plot(popmer_border_x,popmer_border_y,color='#1b2c3f', linestyle='None', m
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
 
-pyplot.savefig('driverlog/timevscore'+str(problemID)+'.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/timevscore'+str(problemID)+'.svg',bbox_inches='tight',  format = 'svg')
 
 
 
@@ -978,7 +992,7 @@ pyplot.plot(popmer_valid,popmer_time,color='#1b2c3f', linestyle='-', markeredgec
 
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/time2.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/time2.svg',bbox_inches='tight',  format = 'svg')
 
 
 #MEMORY2------------------------------------
@@ -1013,5 +1027,5 @@ pyplot.plot(popmer_valid,popmer_memory,color='#1b2c3f', linestyle='-', markeredg
 
 pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-pyplot.savefig('driverlog/memory2.pdf',bbox_inches='tight',  format = 'pdf')
+pyplot.savefig('driverlog/memory2.svg',bbox_inches='tight',  format = 'svg')
 

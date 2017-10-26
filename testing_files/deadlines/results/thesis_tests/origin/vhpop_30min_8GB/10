@@ -1,0 +1,4 @@
+;dlog-1-1-25-10
+vhpop: std::bad_alloc
+;Could not send SIGTERM to process 22699
+;waited

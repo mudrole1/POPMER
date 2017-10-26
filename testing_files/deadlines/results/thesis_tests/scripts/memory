@@ -1,0 +1,7 @@
+medianMemP &  25smMemP &  75sMemP &  medianMemO &  25smMemO &  75sMemO & 
+bigdeadlines & 32.11 & 30.84 & 33.67 & 136.21 & 101.49 & 770.16 \\ 
+smaller_deadlines & 32.36 & 30.84 & 33.67 & 1049.19 & 268.3 & 1471.2 \\ 
+impossible_deadlines & 32.2 & 30.7 & 33.69 & 32.55 & 32.42 & 1887.62 \\ 
+middle_deadlines & 32.11 & 30.84 & 33.67 & 136.22 & 101.55 & 768.47 \\ 
+rand_rel_big_dead & 33.07 & 31.55 & 35.12 & 651.71 & 444.31 & 2161.36 \\ 
+seq_rel_big_dead & 33.43 & 31.55 & 35.63 & 122.98 & 100.54 & 2963.82 \\ 

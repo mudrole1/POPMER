@@ -7,8 +7,8 @@ import matplotlib.pyplot as pyplot
 from array import array
 from matplotlib.backends.backend_pdf import PdfPages
 
-IPC3 = ["POPMER_IPCVHPOP_30min_8GB", "ipc3_vhpop_sequence_30min_8GB", "ipc3_vhpop_full_30min_8GB"]
-ORIG = ["POPMER_0VHPOP_30min_8GB", "o_vhpop_sequence_30min_8GB", "o_vhpop_full_30min_8GB"]
+IPC3 = ["old/POPMER_IPCVHPOP_30min_8GB", "old/ipc3_vhpop_sequence_30min_8GB", "old/ipc3_vhpop_full_30min_8GB"]
+ORIG = ["POPMER_0VHPOP_30min_6GB", "old/o_vhpop_sequence_30min_8GB", "o_vhpop_full_30min_6GB"]
 FIG= ["IPC3-VHPOP", "O-VHPOP"]
 limitm = []
 limitme = []
@@ -42,26 +42,26 @@ for what in tests:
   times = []
   timeu = []
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[0]+ '/makespan','r') as file_mymerge:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[0]+ '/makespan','r') as file_mymerge:
     for line in file_mymerge:
      makespans = line.split(";")
      value=makespans[len(makespans)-2] #-1 gives \n, -2 the last number
      mymerge.append(float(value))
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[1]+ '/makespan','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[1]+ '/makespan','r') as filei:
    for line in filei:
     makespans = line.split(";")
     value=makespans[len(makespans)-2] 
     naive.append(float(value))
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[2]+ '/makespan','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[2]+ '/makespan','r') as filei:
    for line in filei:
     makespans = line.split(";")
     value=makespans[len(makespans)-2] 
     uni.append(float(value))
 
   #MEMORY -------------
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[0]+ '/memory','r') as file_mymerge:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[0]+ '/memory','r') as file_mymerge:
    for line in file_mymerge:
     makespans = line.split(" ")
     if(len(makespans)==4):   
@@ -69,7 +69,7 @@ for what in tests:
       memorym.append(float(value))
 
   max_memory = 0
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[1]+ '/memory','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[1]+ '/memory','r') as filei:
    for line in filei:
     makespans = line.split(" ")
     if(len(makespans)==4):
@@ -80,7 +80,7 @@ for what in tests:
       else:
         memorys.append(max_memory)
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[2]+ '/memory','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[2]+ '/memory','r') as filei:
    for line in filei:
     makespans = line.split(" ")
     if(len(makespans)==4):
@@ -89,7 +89,7 @@ for what in tests:
 
 
   #TIME ------------
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[0]+ '/real_runtime','r') as file_mymerge:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[0]+ '/real_runtime','r') as file_mymerge:
    i=0
    for line in file_mymerge:
     if(i==0):
@@ -101,7 +101,7 @@ for what in tests:
       value=makespans[0]
       timem.append(float(value)) 
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[1]+ '/real_runtime','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[1]+ '/real_runtime','r') as filei:
    i=0
    for line in filei:
     if(i==0):
@@ -117,7 +117,7 @@ for what in tests:
         ov =0
       times.append(ov+value)
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[2]+ '/real_runtime','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[2]+ '/real_runtime','r') as filei:
    i=0
    for line in filei:
     if(i==0):
@@ -131,7 +131,7 @@ for what in tests:
 
 
   #VALID----------
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[0]+ '/valid','r') as file_mymerge:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[0]+ '/valid','r') as file_mymerge:
    x=1
    invalid =0
    for line in file_mymerge:
@@ -149,7 +149,7 @@ for what in tests:
   limitlX.append(min(validm)-1)
   limituX.append(max(validm)+1)
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[1]+ '/valid','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[1]+ '/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -164,7 +164,7 @@ for what in tests:
       invalid = invalid+1
     x=x+1
 
-  with open('/data/Phd_final/Phd_evaluation/durative/results/vhpop_comparison/' + what[2]+ '/valid','r') as filei:
+  with open('/home/lenka/PostDoc/POPMER/testing_files/durative/results/vhpop_comparison/' + what[2]+ '/valid','r') as filei:
    x=1
    invalid =0
    for line in filei:
@@ -246,7 +246,10 @@ for what in tests:
 
   pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-  pyplot.savefig('vhpop_comparison_graphs/g-makespan-'+FIG[g]+'.pdf',bbox_inches='tight',  format = 'pdf')
+
+
+  pyplot.savefig('vhpop_comparison_graphs/g-makespan-'+FIG[g]+'.svg',bbox_inches='tight',  format = 'svg')
+
 
 
   #MEMORY-------------------------
@@ -271,7 +274,7 @@ for what in tests:
 
   pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)  
 
-  pyplot.savefig('vhpop_comparison_graphs/g-memory-'+FIG[g]+'.pdf',bbox_inches='tight',  format = 'pdf')
+  pyplot.savefig('vhpop_comparison_graphs/g-memory-'+FIG[g]+'.svg',bbox_inches='tight',  format = 'svg')
  
   #TIME-------------------------
 
@@ -295,7 +298,7 @@ for what in tests:
 
   pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-  pyplot.savefig('vhpop_comparison_graphs/g-time-'+FIG[g]+'.pdf',bbox_inches='tight',  format = 'pdf')
+  pyplot.savefig('vhpop_comparison_graphs/g-time-'+FIG[g]+'.svg',bbox_inches='tight',  format = 'svg')
 
   #IPCscore---------
   fig = pyplot.figure(g*4+4)
@@ -323,7 +326,7 @@ for what in tests:
 
   pyplot.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,  ncol=2, mode="expand", borderaxespad=0.)
 
-  pyplot.savefig('vhpop_comparison_graphs/g-RIPCscore-'+FIG[g]+'.pdf',bbox_inches='tight',  format = 'pdf')
+  pyplot.savefig('vhpop_comparison_graphs/g-RIPCscore-'+FIG[g]+'.svg',bbox_inches='tight',  format = 'svg')
 
 
 

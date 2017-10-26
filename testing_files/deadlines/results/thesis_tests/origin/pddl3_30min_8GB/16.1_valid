@@ -1,0 +1,9 @@
+Checking plan: /data/Phd_final/Phd_evaluation/deadlines/results/origin/pddl3_30min_8GB/16.1
+Plan executed successfully - checking goal
+Plan valid
+Final value: 688.034 
+
+Successful plans:
+Value: 688.034
+ /data/Phd_final/Phd_evaluation/deadlines/results/origin/pddl3_30min_8GB/16.1 688.034 
+
