@@ -1,6 +1,0 @@
-;dlog-1-1-25-8
-vhpop: std::bad_alloc
-;Could not send SIGTERM to process 10323
-;waited
-
-Whole time of vhpop running:
